@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airlines Bar Chart Race</title>
+  <!-- Include D3.js library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Include CSS styles (optional) -->
+  <style>
+    svg {
+  width: 100%; /* Ensure it can expand to full width */
+  max-width: none; /* Remove any max-width constraints */
+  overflow: visible; /* Allow content to overflow if necessary */
+}
+ 
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #chart {
+    width: 100%;
+    width: 1500px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .axis text {
+    font-size: 20px;
+  }
+  
+  .text-label {
+    font-size: 20px;
+    fill: #000;
+  }
+  
+  .text-value {
+    font-size: 20px;
+    fill: #000;
+  }
+  
+  .ticker {
+    font-size: 72px;
+    font-weight: bold;
+    opacity: 0.25;
+  }
+
+  .bar {
+  fill-opacity: 0.7; /* Set the desired opacity */
+  }
+
+  .legend {
+  opacity: 0.7; /* Set opacity for the entire legend */
+}
+  </style>
+</head>
+<body>
+  <!-- Container for the chart -->
+  <div id="chart"></div>
+  <!-- Include the main JavaScript file -->
+  <script src="main.js"></script>
+</body>
+</html>

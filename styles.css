@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #chart {
+    position: relative;
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .axis text {
+    font-size: 12px;
+  }
+  
+  .text-label {
+    font-size: 14px;
+    fill: #000;
+  }
+  
+  .text-value {
+    font-size: 14px;
+    fill: #000;
+  }
+  
+  .ticker {
+    font-size: 72px;
+    font-weight: bold;
+    opacity: 0.25;
+  }
