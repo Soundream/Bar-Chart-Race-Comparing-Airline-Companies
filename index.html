@@ -2,63 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Airlines Bar Chart Race</title>
+  <title>Airlines Bar Chart Race and Animated Bubble Chart</title>
   <!-- Include D3.js library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <!-- Include CSS styles (optional) -->
+  <!-- Include CSS styles -->
   <style>
-    svg {
-  width: 100%; /* Ensure it can expand to full width */
-  max-width: none; /* Remove any max-width constraints */
-  overflow: visible; /* Allow content to overflow if necessary */
-}
- 
     body {
-    font-family: sans-serif;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  #chart {
-    width: 100%;
-    width: 1500px;
-    height: 600px;
-    margin: 0 auto;
-  }
-  
-  .axis text {
-    font-size: 20px;
-  }
-  
-  .text-label {
-    font-size: 20px;
-    fill: #000;
-  }
-  
-  .text-value {
-    font-size: 20px;
-    fill: #000;
-  }
-  
-  .ticker {
-    font-size: 72px;
-    font-weight: bold;
-    opacity: 0.25;
-  }
+      font-family: sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-  .bar {
-  fill-opacity: 0.7; /* Set the desired opacity */
-  }
+    #chart-container {
+      width: 100%;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
 
-  .legend {
-  opacity: 0.7; /* Set opacity for the entire legend */
-}
+    #bar-chart, #bubble-chart {
+      width: 100%;
+      height: 600px;
+      margin-bottom: 50px;
+    }
+
+    /* Styles for the bar chart race */
+    #bar-chart svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .axis text {
+      font-size: 20px;
+    }
+
+    .text-label, .text-value {
+      font-size: 20px;
+      fill: #000;
+    }
+
+    .ticker {
+      font-size: 72px;
+      font-weight: bold;
+      opacity: 0.25;
+    }
+
+    .bar {
+      fill-opacity: 0.7;
+    }
+
+    .legend {
+      opacity: 0.7;
+    }
+
+    /* Styles for the bubble chart */
+    #bubble-chart svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .axis-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .bubble:hover {
+      stroke: #000;
+      stroke-width: 1px;
+    }
+
+    .date-label {
+      font-size: 24px;
+      font-weight: bold;
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
-  <!-- Container for the chart -->
-  <div id="chart"></div>
-  <!-- Include the main JavaScript file -->
-  <script src="main.js"></script>
+  <!-- Container for the charts -->
+  <div id="chart-container">
+    <!-- Bar Chart Race -->
+    <div id="chart"></div>
+    <!-- Animated Bubble Chart -->
+    <div id="bubble-chart"></div>
+  </div>
+  <!-- Include the JavaScript files -->
+  <script src="bar.js"></script>
+  <script src="bubble.js"></script>
 </body>
 </html>
