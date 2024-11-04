@@ -1,5 +1,5 @@
 // Configuration variables
-const marginBubble = { top: 50, right: 100, bottom: 50, left: 60 };
+const marginBubble = { top: 100, right: 100, bottom: 50, left: 60 };
 const widthBubble = 840 - marginBubble.left - marginBubble.right;
 const heightBubble = 600 - marginBubble.top - marginBubble.bottom;
 
@@ -44,7 +44,7 @@ svgBubble.append("text")
   .attr("x", widthBubble / 2)
   .attr("y", heightBubble + 40)
   .style("text-anchor", "middle")
-  .text("EBITDA Margin (%)");
+  .text("EBITDA Margin TTM (%)");
 
 svgBubble.append("text")
   .attr("class", "axis-label")
@@ -52,7 +52,7 @@ svgBubble.append("text")
   .attr("y", -50)
   .attr("transform", "rotate(-90)")
   .style("text-anchor", "middle")
-  .text("Revenue Growth (%)");
+  .text("Revenue Growth TTM (%)");
 
 // Define custom colors for each region (same as in your bar chart)
 const regionColors = {
