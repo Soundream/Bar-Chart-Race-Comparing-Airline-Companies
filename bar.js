@@ -84,7 +84,7 @@ function initTimeline(dates) {
 }
 
 // Configuration variables for the bar chart
-const margin = { top: 200, right: 100, bottom: 5, left: 150 };
+const margin = { top: 200, right: 100, bottom: 60, left: 150 };
 const width = 1000;
 const height = 1500;
 const n = 15; // Number of bars to display
@@ -436,8 +436,19 @@ d3.csv("airlines_ideal_format.csv", function(d) {
     .attr("dy", "0.32em")
     .style("font-size", "48px")
     .style("font-weight", "bold")
-    .style("opacity", 0.75)
+    .style("opacity", 0)
     .text(formatDate(keyframes[0][0]));
+
+  const lablel = svg.append("text")
+    .attr("class", "label")
+    .attr("text-anchor", "end")
+    .attr("x", width - 180)
+    .attr("y", height - 45) 
+    .attr("dy", "0.32em")
+    .style("font-size", "35px")
+    .style("font-weight", "bold")
+    .style("opacity", 1)
+    .text("Revenue TTM (in millions)");
 
   // Remove old legend if necessary
   svg.select(".legend").remove();
@@ -445,7 +456,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
   // Add legend for regions with custom colors
   const legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", `translate(${width - margin.right - 80}, ${margin.top + 700})`);
+    .attr("transform", `translate(${width - margin.right - 80}, ${margin.top + 600})`);
 
   const legendItems = legend.selectAll(".legend-item")
     .data(Object.keys(regionColors))

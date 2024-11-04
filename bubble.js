@@ -72,6 +72,69 @@ const regionColors = {
 // Color function based on regions with custom colors
 const color = d => regionColors[d.region] || "#7f7f7f"; // Default to gray if region not found
 
+// **Define background events**
+const backgroundEvents = [
+  {
+    name: "9/11 Terrorist attacks",
+    start: new Date(2001, 8, 11), // September 11, 2001
+    end: new Date(2002, 4, 11)
+  },
+  {
+    name: "Oil price surge",
+    start: new Date(2007, 0, 1), // January 1, 2007
+    end: new Date(2008, 11, 31)
+  },
+  {
+    name: "Great Recession",
+    start: new Date(2009, 0, 1), // January 1, 2009
+    end: new Date(2009, 11, 31)
+  },
+  {
+    name: "Eyjafjallajökull Volcanic Eruption",
+    start: new Date(2010, 2, 14), // March 14, 2010
+    end: new Date(2010, 5, 23) // June 23, 2010
+  },
+  {
+    name: "Boeing 737 MAX Grounding",
+    start: new Date(2019, 2, 13), // March 13, 2019
+    end: new Date(2020, 11, 31)
+  },
+  {
+    name: "Pandemic",
+    start: new Date(2020, 1, 11), // February 11, 2020
+    end: new Date(2020, 11, 31)
+  },
+  {
+    name: "Present",
+    start: new Date(2024, 0, 1), // January 1, 2024
+    end: new Date(9999, 11, 31)
+  }
+];
+
+// **Add a background group for events**
+const backgroundGroup = svgBubble.append("g")
+  .attr("class", "background-events");
+
+// Define plot area dimensions
+const plotWidth = widthBubble;
+const plotHeight = heightBubble;
+
+// **Add event labels**
+const eventLabels = backgroundGroup.selectAll(".event-label")
+  .data(backgroundEvents)
+  .enter()
+  .append("text")
+  .attr("class", "event-label")
+  .attr("x", plotWidth / 2)
+  .attr("y", plotHeight / 2)
+  .attr("text-anchor", "middle")
+  .attr("alignment-baseline", "middle")
+  .style("fill", "rgba(128, 128, 128, 0.5)") // Grey with 50% opacity
+  .style("font-size", "30px")
+  .style("font-weight", "bold")
+  .style("opacity", 0)
+  .text(d => d.name);
+
 // Load and process data
 d3.csv("Bubble.csv").then(function(data) {
   // Parse data
@@ -83,10 +146,10 @@ d3.csv("Bubble.csv").then(function(data) {
     d.date = d.Date; // Date as string
     d.region = d.Region; // Add region information
 
-    // Convert date to a time value (assuming 'Date' is in 'YYYY'Q'Q' format)
-    const parts = d.date.split("'");
+    // Convert date to a time value (assuming 'YYYY'Q'Q' format)
+    const parts = d.date.split("'Q");
     d.year = +parts[0];
-    d.quarter = +parts[1].replace('Q', '');
+    d.quarter = +parts[1];
     // Approximate date as milliseconds since epoch
     d.time = new Date(d.year, (d.quarter - 1) * 3).getTime();
   });
@@ -127,17 +190,15 @@ d3.csv("Bubble.csv").then(function(data) {
       .data([], d => d.company);
 
     for (const [currentTime, data] of keyframes) {
+      // **Update background based on currentTime**
+      updateBackground(currentTime);
+
       // Update date label
       const currentDate = new Date(currentTime);
       const currentQuarter = Math.floor(currentDate.getMonth() / 3) + 1;
       const dateString = `${currentDate.getFullYear()}'Q${currentQuarter}`;
       svgBubble.selectAll(".date-label").remove();
-      svgBubble.append("text")
-        .attr("class", "date-label")
-        .attr("x", widthBubble - 10)
-        .attr("y", heightBubble - 10)
-        .style("text-anchor", "end")
-        .text(dateString);
+      
 
       // Update bubbles
       bubbles = bubbles.data(data, d => d.company);
@@ -219,5 +280,19 @@ d3.csv("Bubble.csv").then(function(data) {
     });
 
     return interpolatedData;
+  }
+
+  // **Function to update background based on currentTime**
+  function updateBackground(currentTime) {
+    // Update event labels
+    backgroundGroup.selectAll(".event-label")
+      .each(function(d) {
+        const label = d3.select(this);
+        if (currentTime >= d.start.getTime() && currentTime <= d.end.getTime()) {
+          label.style("opacity", 0.5); // Show label when active
+        } else {
+          label.style("opacity", 0); // Hide when not active
+        }
+      });
   }
 });
