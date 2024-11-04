@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Airlines Bar Chart Race and Animated Bubble Chart</title>
+  <title>Airlines Bar Chart Race and Animated Bubble Chart with Timeline</title>
   <!-- Include D3.js library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Include CSS styles -->
@@ -13,20 +13,21 @@
       overflow-x: hidden;
     }
 
+    /* Use Flexbox to display charts horizontally */
     #chart-container {
+      display: flex;
       width: 100%;
       max-width: 1500px;
       margin: 0 auto;
     }
 
-    #bar-chart, #bubble-chart {
-      width: 100%;
+    #chart, #bubble-chart {
+      width: 50%;
       height: 600px;
-      margin-bottom: 50px;
     }
 
     /* Styles for the bar chart race */
-    #bar-chart svg {
+    #chart svg {
       width: 100%;
       height: 100%;
     }
@@ -75,18 +76,57 @@
       font-weight: bold;
       opacity: 0.7;
     }
+
+    /* Timeline Styles */
+    #timeline-container {
+      width: 100%;
+      height: 100px; /* Adjust as needed */
+      margin-top: 20px;
+    }
+
+    #timeline svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .timeline-axis {
+      font-size: 14px;
+    }
+
+    .timeline-line {
+      stroke: #ccc;
+      stroke-width: 2px;
+    }
+
+    .timeline-marker {
+      stroke: red;
+      stroke-width: 2px;
+    }
+
+    .year-tick line {
+  stroke-width: 1px;
+  
+}
+
+.quarter-tick line {
+  stroke-width: 1px;
+}
   </style>
 </head>
 <body>
+</div>
+<!-- Timeline Container -->
+<div id="timeline-container"></div>
   <!-- Container for the charts -->
   <div id="chart-container">
     <!-- Bar Chart Race -->
-    <div id="chart"></div>
-    <!-- Animated Bubble Chart -->
     <div id="bubble-chart"></div>
-  </div>
+    <!-- Animated Bubble Chart -->
+    <div id="chart"></div>
+
   <!-- Include the JavaScript files -->
   <script src="bar.js"></script>
   <script src="bubble.js"></script>
+  <script src="timeline.js"></script>
 </body>
 </html>

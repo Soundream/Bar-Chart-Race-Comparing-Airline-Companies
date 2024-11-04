@@ -1,9 +1,9 @@
 // Configuration variables
-const margin = { top: 80, right: 180, bottom: 5, left: 150 };
-const width = 2400;
+const margin = { top: 80, right: 100, bottom: 5, left: 150 };
+const width = 1000;
 const height = 1500;
 const n = 15; // Number of bars to display
-const duration = 180; // Duration of transitions in milliseconds
+const duration = 100; // Duration of transitions in milliseconds
 const flagWidth = 40; // Width of flag images
 
 // Create SVG container
@@ -57,7 +57,6 @@ d3.csv("airlines_ideal_format.csv", function(d) {
   const nameToCountryCode = new Map(data.map(d => [d.name, d.countryCode]));
   const nameToCountry = new Map(data.map(d => [d.name, d.country]));
 
-
   // Group data by date and name
   const datevalues = Array.from(
     d3.rollup(
@@ -91,6 +90,15 @@ d3.csv("airlines_ideal_format.csv", function(d) {
     new Date(datevalues[datevalues.length - 1][0]),
     rank(name => datevalues[datevalues.length - 1][1].get(name) || 0)
   ]);
+
+  // ** Store keyframe dates and duration per frame in localStorage **
+  const dates = keyframes.map(([date]) => date);
+  localStorage.setItem('animationDates', JSON.stringify(dates));
+  localStorage.setItem('durationPerFrame', duration);
+
+  // For debugging: Log the stored data
+  console.log("Stored animationDates in localStorage:", dates);
+  console.log("Stored durationPerFrame in localStorage:", duration);
 
   function rank(value) {
     const data = Array.from(names, name => ({
@@ -162,26 +170,27 @@ d3.csv("airlines_ideal_format.csv", function(d) {
   // Add legend for regions with custom colors
   const legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", `translate(${width - margin.right + 10}, ${margin.top + 1000})`);
+    .attr("transform", `translate(${width - margin.right - 80}, ${margin.top + 700})`);
 
   const legendItems = legend.selectAll(".legend-item")
     .data(Object.keys(regionColors))
     .enter()
     .append("g")
     .attr("class", "legend-item")
-    .attr("transform", (d, i) => `translate(0, ${i * 30})`);
+    .attr("transform", (d, i) => `translate(0, ${i * 60})`);
 
   legendItems.append("rect")
     .attr("x", 0)
-    .attr("width", 18)
-    .attr("height", 18)
+    .attr("width", 50)
+    .attr("height", 50)
     .attr("fill", d => regionColors[d]);
 
   legendItems.append("text")
-    .attr("x", 24)
-    .attr("y", 9)
+    .attr("x", 60)
+    .attr("y", 30)
     .attr("dy", "0.35em")
     .style("text-anchor", "start")
+    .style("font-size", "25px")
     .text(d => d);
 
   // Variables to hold previous data state
@@ -206,7 +215,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
           .tickPadding(6)
         )
         .selectAll(".tick text")
-        .style("font-size", "20px")
+        .style("font-size", "30px")
         .style("text-anchor", "end")
         .attr("x", -5); // Adjust as needed
 
@@ -274,7 +283,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
           const text = g.append("text")
             .attr("x", 40)
             .attr("dy", "0.35em")
-            .style("font-size", "20px");
+            .style("font-size", "30px");
 
           text.append("tspan")
             .attr("x", 80)

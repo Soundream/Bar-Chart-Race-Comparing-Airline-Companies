@@ -1,6 +1,6 @@
 // Configuration variables
-const marginBubble = { top: 50, right: 50, bottom: 50, left: 70 };
-const widthBubble = 960 - marginBubble.left - marginBubble.right;
+const marginBubble = { top: 50, right: 100, bottom: 50, left: 60 };
+const widthBubble = 840 - marginBubble.left - marginBubble.right;
 const heightBubble = 600 - marginBubble.top - marginBubble.bottom;
 
 const svgBubble = d3.select("#bubble-chart")
@@ -54,6 +54,24 @@ svgBubble.append("text")
   .style("text-anchor", "middle")
   .text("Revenue Growth (%)");
 
+// Define custom colors for each region (same as in your bar chart)
+const regionColors = {
+  "North America": "#0A3161",
+  "Europe": "#ff7f0e",
+  "Asia Pacific": "#FFFF66",
+  "Africa": "#d62728",
+  "China": "#EE1C25",
+  "LATAM": "#008000",
+  "India": "#FB7C24",
+  "Middle East": "#006400",
+  "Russia": "#1C3578",
+  "Turkey": "#C8102E",
+  // Add more regions and colors as needed
+};
+
+// Color function based on regions with custom colors
+const color = d => regionColors[d.region] || "#7f7f7f"; // Default to gray if region not found
+
 // Load and process data
 d3.csv("Bubble.csv").then(function(data) {
   // Parse data
@@ -63,6 +81,7 @@ d3.csv("Bubble.csv").then(function(data) {
     d.revenue = +d.Value; // Use Value column for revenue (actual revenue)
     d.company = d.Airline; // Company name (use 'Airline' as company)
     d.date = d.Date; // Date as string
+    d.region = d.Region; // Add region information
 
     // Convert date to a time value (assuming 'Date' is in 'YYYY'Q'Q' format)
     const parts = d.date.split("'");
@@ -72,148 +91,133 @@ d3.csv("Bubble.csv").then(function(data) {
     d.time = new Date(d.year, (d.quarter - 1) * 3).getTime();
   });
 
-  // Get unique dates for animation
-  const dates = Array.from(new Set(data.map(d => d.time))).sort((a, b) => a - b);
-
   // Set domain for size scale based on revenue
   sizeScaleBubble.domain(d3.extent(data, d => d.revenue));
 
-  // Prepare data grouped by company
-  const dataByCompany = d3.group(data, d => d.company);
+  // Generate keyframes
+  const dateValues = Array.from(
+    d3.group(data, d => d.time)
+  ).sort(([a], [b]) => d3.ascending(a, b));
 
-  // For each company, identify continuous data segments based on quarters
-  const companySegments = new Map();
+  const keyframes = [];
+  const k = 10; // Number of interpolated frames between dates
 
-  dataByCompany.forEach((values, company) => {
-    // Sort data by year and quarter
-    values.sort((a, b) => {
-      if (a.year !== b.year) {
-        return a.year - b.year;
-      } else {
-        return a.quarter - b.quarter;
-      }
-    });
+  for (let i = 0; i < dateValues.length - 1; i++) {
+    const [timeA, dataA] = dateValues[i];
+    const [timeB, dataB] = dateValues[i + 1];
 
-    // Identify continuous segments
-    const segments = [];
-    let segmentStartIndex = 0;
-
-    for (let i = 1; i < values.length; i++) {
-      const prev = values[i - 1];
-      const current = values[i];
-
-      let expectedYear = prev.year;
-      let expectedQuarter = prev.quarter + 1;
-
-      if (expectedQuarter > 4) {
-        expectedQuarter = 1;
-        expectedYear += 1;
-      }
-
-      if (current.year !== expectedYear || current.quarter !== expectedQuarter) {
-        // Gap detected
-        const segment = values.slice(segmentStartIndex, i);
-        segments.push(segment);
-        segmentStartIndex = i;
-      }
+    for (let j = 0; j < k; ++j) {
+      const t = j / k;
+      const currentTime = timeA * (1 - t) + timeB * t;
+      const interpolatedData = interpolateData(dataA, dataB, t);
+      keyframes.push([currentTime, interpolatedData]);
     }
-    // Add the last segment
-    const lastSegment = values.slice(segmentStartIndex);
-    if (lastSegment.length > 0) {
-      segments.push(lastSegment);
+  }
+  keyframes.push([dateValues[dateValues.length - 1][0], dateValues[dateValues.length - 1][1]]);
+
+  // Duration per transition
+  const duration = 100; // Duration of transitions in milliseconds
+
+  // Start the animation
+  updateChart();
+
+  async function updateChart() {
+    // Initialize bubbles outside the loop
+    let bubbles = svgBubble.selectAll(".bubble")
+      .data([], d => d.company);
+
+    for (const [currentTime, data] of keyframes) {
+      // Update date label
+      const currentDate = new Date(currentTime);
+      const currentQuarter = Math.floor(currentDate.getMonth() / 3) + 1;
+      const dateString = `${currentDate.getFullYear()}'Q${currentQuarter}`;
+      svgBubble.selectAll(".date-label").remove();
+      svgBubble.append("text")
+        .attr("class", "date-label")
+        .attr("x", widthBubble - 10)
+        .attr("y", heightBubble - 10)
+        .style("text-anchor", "end")
+        .text(dateString);
+
+      // Update bubbles
+      bubbles = bubbles.data(data, d => d.company);
+
+      bubbles.exit()
+        .transition()
+        .duration(duration)
+        .style("opacity", 0)
+        .remove();
+
+      bubbles = bubbles.enter()
+        .append("circle")
+        .attr("class", "bubble")
+        .attr("cx", d => xScaleBubble(d.ebitda_margin))
+        .attr("cy", d => yScaleBubble(d.revenue_growth))
+        .attr("r", d => sizeScaleBubble(d.revenue))
+        .style("fill", d => color(d))
+        .style("opacity", 0)
+        .merge(bubbles);
+
+      // Update titles for tooltips
+      bubbles.select("title").remove();
+      bubbles.append("title")
+        .text(d => `${d.company}\nRegion: ${d.region}\nRevenue: ${d3.format(",")(Math.round(d.revenue))}\nEBITDA Margin: ${d.ebitda_margin.toFixed(2)}%\nRevenue Growth: ${d.revenue_growth.toFixed(2)}%`);
+
+      // Transition bubbles to new positions
+      const transition = bubbles.transition()
+        .duration(duration)
+        .attr("cx", d => xScaleBubble(d.ebitda_margin))
+        .attr("cy", d => yScaleBubble(d.revenue_growth))
+        .attr("r", d => sizeScaleBubble(d.revenue))
+        .style("opacity", 0.7);
+
+      // Wait for the transition to end before moving to the next frame
+      await transition.end();
     }
+  }
 
-    // For each segment, create interpolators
-    const interpolatedSegments = segments.map(segment => {
-      const times = segment.map(d => d.time);
-      return {
-        startTime: times[0],
-        endTime: times[times.length - 1],
-        ebitdaMarginInterpolator: d3.scaleLinear()
-          .domain(times)
-          .range(segment.map(d => d.ebitda_margin)),
-        revenueGrowthInterpolator: d3.scaleLinear()
-          .domain(times)
-          .range(segment.map(d => d.revenue_growth)),
-        revenueInterpolator: d3.scaleLinear()
-          .domain(times)
-          .range(segment.map(d => d.revenue)),
-      };
-    });
+  function interpolateData(dataA, dataB, t) {
+    const dataMapA = new Map(dataA.map(d => [d.company, d]));
+    const dataMapB = new Map(dataB.map(d => [d.company, d]));
 
-    companySegments.set(company, interpolatedSegments);
-  });
+    const companies = new Set([...dataMapA.keys(), ...dataMapB.keys()]);
 
-  // Initialize bubbles
-  const bubbles = svgBubble.selectAll(".bubble")
-    .data(Array.from(dataByCompany.keys()))
-    .enter()
-    .append("circle")
-    .attr("class", "bubble")
-    .style("fill", "steelblue")
-    .style("opacity", 0);
+    const interpolatedData = [];
 
-  // Add titles for tooltips
-  bubbles.append("title");
+    companies.forEach(company => {
+      const dA = dataMapA.get(company);
+      const dB = dataMapB.get(company);
 
-  // Start the continuous animation
-  const totalDuration = 50000; // Total animation duration in milliseconds
-
-  d3.timer(function(elapsed) {
-    const currentTime = d3.min(dates) + ((elapsed % totalDuration) / totalDuration) * (d3.max(dates) - d3.min(dates));
-
-    // Update date label
-    svgBubble.selectAll(".date-label").remove();
-    const currentDate = new Date(currentTime);
-    const currentQuarter = Math.floor(currentDate.getMonth() / 3) + 1;
-    const dateString = `${currentDate.getFullYear()}'Q${currentQuarter}`;
-    svgBubble.append("text")
-      .attr("class", "date-label")
-      .attr("x", widthBubble - 10)
-      .attr("y", heightBubble - 10)
-      .style("text-anchor", "end")
-      .text(dateString);
-
-    // Update bubbles
-    bubbles.each(function(company) {
-      const node = d3.select(this);
-      const segments = companySegments.get(company);
-
-      let interpolated = false;
-
-      for (const segment of segments) {
-        if (currentTime >= segment.startTime && currentTime <= segment.endTime) {
-          // Interpolate values within this segment
-          const ebitda_margin = segment.ebitdaMarginInterpolator(currentTime);
-          const revenue_growth = segment.revenueGrowthInterpolator(currentTime);
-          const revenue = segment.revenueInterpolator(currentTime);
-
-          // Check if values are valid numbers
-          if (isNaN(ebitda_margin) || isNaN(revenue_growth) || isNaN(revenue)) {
-            node.style("opacity", 0);
-            interpolated = true; // Prevent further checks
-            break;
-          }
-
-          // Update position and size
-          node.attr("cx", xScaleBubble(ebitda_margin))
-            .attr("cy", yScaleBubble(revenue_growth))
-            .attr("r", sizeScaleBubble(revenue))
-            .style("opacity", 0.7);
-
-          // Update tooltip
-          node.select("title")
-            .text(`${company}\nRevenue: ${d3.format(",")(Math.round(revenue))}\nEBITDA Margin: ${ebitda_margin.toFixed(2)}%\nRevenue Growth: ${revenue_growth.toFixed(2)}%`);
-
-          interpolated = true;
-          break; // Exit the loop since we've found the segment
-        }
-      }
-
-      if (!interpolated) {
-        // Current time is outside all data segments; hide the bubble
-        node.style("opacity", 0);
+      if (dA && dB) {
+        // Both times have data for this company
+        interpolatedData.push({
+          company: company,
+          ebitda_margin: dA.ebitda_margin * (1 - t) + dB.ebitda_margin * t,
+          revenue_growth: dA.revenue_growth * (1 - t) + dB.revenue_growth * t,
+          revenue: dA.revenue * (1 - t) + dB.revenue * t,
+          region: dA.region // Assume region doesn't change
+        });
+      } else if (dA) {
+        // Only in dataA
+        interpolatedData.push({
+          company: company,
+          ebitda_margin: dA.ebitda_margin * (1 - t),
+          revenue_growth: dA.revenue_growth * (1 - t),
+          revenue: dA.revenue * (1 - t),
+          region: dA.region
+        });
+      } else if (dB) {
+        // Only in dataB
+        interpolatedData.push({
+          company: company,
+          ebitda_margin: dB.ebitda_margin * t,
+          revenue_growth: dB.revenue_growth * t,
+          revenue: dB.revenue * t,
+          region: dB.region
+        });
       }
     });
-  });
+
+    return interpolatedData;
+  }
 });
