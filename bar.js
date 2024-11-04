@@ -1,12 +1,89 @@
-// Configuration variables
+// Configuration variables for the timeline
+const marginTimeline = { top: 20, right: 10, bottom: 20, left: 250 };
+const widthTimeline = 1500 - marginTimeline.left - marginTimeline.right;
+const heightTimeline = 100 - marginTimeline.top - marginTimeline.bottom;
+
+// Create SVG container for the timeline
+const svgTimeline = d3.select("#timeline-container")
+  .append("svg")
+  .attr("id", "timeline")
+  .attr("width", widthTimeline + marginTimeline.left + marginTimeline.right)
+  .attr("height", heightTimeline + marginTimeline.top + marginTimeline.bottom)
+  .append("g")
+  .attr("transform", `translate(${marginTimeline.left},${marginTimeline.top})`);
+
+// Create the axis group
+const xAxisTimeline = svgTimeline.append("g")
+  .attr("transform", `translate(0, ${heightTimeline / 2})`)
+  .attr("class", "timeline-axis");
+
+// Add the timeline line
+svgTimeline.append("line")
+  .attr("class", "timeline-line")
+  .attr("x1", 0)
+  .attr("x2", widthTimeline)
+  .attr("y1", heightTimeline / 2)
+  .attr("y2", heightTimeline / 2)
+  .attr("stroke", "black");
+
+// Add the moving marker (stick)
+const timelineMarker = svgTimeline.append("line")
+  .attr("class", "timeline-marker")
+  .attr("x1", 0)
+  .attr("x2", 0)
+  .attr("y1", 0)
+  .attr("y2", heightTimeline)
+  .attr("stroke", "red")
+  .attr("stroke-width", 2);
+
+let timeScale; // Declare timeScale in a scope accessible to all functions
+
+// Function to initialize the timeline
+function initTimeline(dates) {
+  // Create the time scale
+  timeScale = d3.scaleTime()
+    .domain(d3.extent(dates))
+    .range([0, widthTimeline]);
+
+  // Create the axis with quarterly ticks but label only the years
+  const axis = d3.axisBottom(timeScale)
+    .ticks(d3.timeMonth.every(3)) // Ticks every quarter
+    .tickFormat(function(date) {
+      // Label only at the start of the year (January)
+      return date.getMonth() === 0 ? d3.timeFormat("%Y")(date) : "";
+    });
+
+  // Call the axis
+  xAxisTimeline.call(axis);
+
+  // Adjust tick sizes after the axis is rendered
+  xAxisTimeline.selectAll(".tick")
+    .each(function(d) {
+      const tick = d3.select(this);
+      if (d.getMonth() === 0) {
+        // Year tick: make it longer
+        tick.select("line")
+          .attr("y2", 6); // Longer tick for years
+      } else {
+        // Quarter tick: make it shorter
+        tick.select("line")
+          .attr("y2", 3); // Shorter tick for quarters
+      }
+    });
+
+  xAxisTimeline.selectAll(".tick")
+    .classed("year-tick", function(d) { return d.getMonth() === 0; })
+    .classed("quarter-tick", function(d) { return d.getMonth() !== 0; });
+}
+
+// Configuration variables for the bar chart
 const margin = { top: 80, right: 100, bottom: 5, left: 150 };
 const width = 1000;
 const height = 1500;
 const n = 15; // Number of bars to display
 const duration = 100; // Duration of transitions in milliseconds
-const flagWidth = 40; // Width of flag images
 
-// Create SVG container
+// Create SVG container for the bar chart
 const svg = d3.select("#chart")
   .append("svg")
   .attr("viewBox", [0, 0, width, height]);
@@ -91,14 +168,11 @@ d3.csv("airlines_ideal_format.csv", function(d) {
     rank(name => datevalues[datevalues.length - 1][1].get(name) || 0)
   ]);
 
-  // ** Store keyframe dates and duration per frame in localStorage **
+  // Extract dates from keyframes
   const dates = keyframes.map(([date]) => date);
-  localStorage.setItem('animationDates', JSON.stringify(dates));
-  localStorage.setItem('durationPerFrame', duration);
 
-  // For debugging: Log the stored data
-  console.log("Stored animationDates in localStorage:", dates);
-  console.log("Stored durationPerFrame in localStorage:", duration);
+  // Initialize the timeline with dates
+  initTimeline(dates);
 
   function rank(value) {
     const data = Array.from(names, name => ({
@@ -199,7 +273,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
   // Animation function
   async function updateChart() {
     for (const [date, data] of keyframes) {
-      const transition = svg.transition()
+      const transition = d3.transition()
         .duration(duration)
         .ease(d3.easeLinear);
 
@@ -265,7 +339,6 @@ d3.csv("airlines_ideal_format.csv", function(d) {
             .attr("transform", d => {
               const xValue = x(d.value);
               const yValue = y(d.name) + y.bandwidth() / 2;
-              console.log(`Name: ${d.name}, Value: ${d.value}, x: ${xValue}, y: ${yValue}`);
               return `translate(${xValue},${yValue})`;
             })
             .attr("text-anchor", "start");
@@ -277,7 +350,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
             .attr("width", 60)
             .attr("height", 40)
             .attr("preserveAspectRatio", "xMidYMid meet")
-            .attr("href", d => d.country ? `https://flagcdn.com/h20/${d.country.toLowerCase()}.png` : null);
+            .attr("href", d => d.countryCode ? `https://flagcdn.com/h20/${d.countryCode.toLowerCase()}.png` : null);
 
           // Append text
           const text = g.append("text")
@@ -328,6 +401,12 @@ d3.csv("airlines_ideal_format.csv", function(d) {
       ticker.transition(transition)
         .text(formatDate(date));
 
+      // Update the timeline marker position
+      const xPosition = timeScale(date);
+      timelineMarker.transition(transition)
+        .attr("x1", xPosition)
+        .attr("x2", xPosition);
+
       // Update previous data
       prev.clear();
       for (const d of topData) {
@@ -347,6 +426,7 @@ d3.csv("airlines_ideal_format.csv", function(d) {
 
   // Start the animation
   updateChart();
+
 }).catch(function(error) {
   console.error("Error loading or parsing data:", error);
 });
