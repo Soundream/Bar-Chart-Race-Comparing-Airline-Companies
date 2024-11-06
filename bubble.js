@@ -54,14 +54,40 @@ svgBubble.append("text")
   .style("text-anchor", "middle")
   .text("Revenue Growth TTM (%)");
 
+  if (yScaleBubble(0) >= 0 && yScaleBubble(0) <= heightBubble) {
+    svgBubble.append("line")
+        .attr("class", "zero-line")
+        .attr("x1", 0)
+        .attr("y1", yScaleBubble(0))
+        .attr("x2", widthBubble)
+        .attr("y2", yScaleBubble(0))
+        .attr("stroke", "green")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", "4,2");
+}
+
+// Vertical line at x = 0%
+if (xScaleBubble(0) >= 0 && xScaleBubble(0) <= widthBubble) {
+    svgBubble.append("line")
+        .attr("class", "zero-line")
+        .attr("x1", xScaleBubble(0))
+        .attr("y1", 0)
+        .attr("x2", xScaleBubble(0))
+        .attr("y2", heightBubble)
+        .attr("stroke", "green")
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", "4,2");
+}
+
+  
 // Define custom colors for each region (same as in your bar chart)
 const regionColors = {
   "North America": "#0A3161",
-  "Europe": "#ff7f0e",
+  "Europe": "#003399",
   "Asia Pacific": "#FFFF66",
   "Africa": "#d62728",
   "China": "#EE1C25",
-  "LATAM": "#008000",
+  "Latin America": "#008000",
   "India": "#FB7C24",
   "Middle East": "#006400",
   "Russia": "#1C3578",
@@ -97,7 +123,7 @@ const backgroundEvents = [
   {
     name: "Boeing 737 MAX Grounding",
     start: new Date(2019, 2, 13), // March 13, 2019
-    end: new Date(2020, 11, 31)
+    end: new Date(2020, 0, 31)
   },
   {
     name: "Pandemic",
