@@ -5,7 +5,7 @@ const DEBUG_MODE = false;
 const TOP_COMPANIES_COUNT = 15;
 
 // Configuration variables
-const marginBubble = { top: 50, right: 20, bottom: 50, left: 80 };
+const marginBubble = { top: 50, right: 20, bottom: 100, left: 80 };
 const widthBubble = 1000 - marginBubble.left - marginBubble.right;
 const heightBubble = 700 - marginBubble.top - marginBubble.bottom;
 
@@ -328,7 +328,7 @@ d3.csv("Bubble.csv").then(function(data) {
       svgBubble.append("text")
         .attr("class", "date-label")
         .attr("x", widthBubble / 2)
-        .attr("y", -25) // 往上移动10像素
+        .attr("y", heightBubble + 70) // 显示在图表下方
         .style("text-anchor", "middle")
         .style("font-size", "18px")
         .style("font-weight", "bold")
