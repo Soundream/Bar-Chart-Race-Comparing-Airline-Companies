@@ -25,6 +25,7 @@ LATAM Airlines,2000'Q1,1310.0,public,CL,Latin America,LA
 China Eastern,2000'Q1,1338.0,public,CN,China,MU
 China Southern,2000'Q1,1663.0,public,CN,China,CZ
 Hainan Airlines,2000'Q1,240.0,public,CN,China,HU
+SpiceJet,2000'Q1,0.0,public,IN,India,SG
 Kenya Airlines,2000'Q1,253.0,public,KE,Africa,KQ
 Comair,2000'Q1,112.0,public,ZA,Africa,MN
 Emirates,2000'Q1,1609.0,private,AE,Middle East,EK
@@ -55,6 +56,7 @@ LATAM Airlines,2000'Q2,1354.0,public,CL,Latin America,LA
 China Eastern,2000'Q2,1348.0,public,CN,China,MU
 China Southern,2000'Q2,1720.0,public,CN,China,CZ
 Hainan Airlines,2000'Q2,255.0,public,CN,China,HU
+SpiceJet,2000'Q2,0.0,public,IN,India,SG
 Kenya Airlines,2000'Q2,266.0,public,KE,Africa,KQ
 Comair,2000'Q2,123.0,public,ZA,Africa,MN
 Emirates,2000'Q2,1700.0,private,AE,Middle East,EK
@@ -309,6 +311,7 @@ LATAM Airlines,2002'Q2,1455.0,public,CL,Latin America,LA
 China Eastern,2002'Q2,1538.0,public,CN,China,MU
 China Southern,2002'Q2,2108.0,public,CN,China,CZ
 Hainan Airlines,2002'Q2,491.0,public,CN,China,HU
+SpiceJet,2002'Q2,0.0,public,IN,India,SG
 Kenya Airlines,2002'Q2,341.0,public,KE,Africa,KQ
 Comair,2002'Q2,135.0,public,ZA,Africa,MN
 Emirates,2002'Q2,2456.0,private,AE,Middle East,EK
@@ -340,6 +343,7 @@ LATAM Airlines,2002'Q3,1460.0,public,CL,Latin America,LA
 China Eastern,2002'Q3,1573.0,public,CN,China,MU
 China Southern,2002'Q3,2143.0,public,CN,China,CZ
 Hainan Airlines,2002'Q3,537.0,public,CN,China,HU
+SpiceJet,2002'Q3,0.0,public,IN,India,SG
 Kenya Airlines,2002'Q3,350.0,public,KE,Africa,KQ
 Comair,2002'Q3,130.0,public,ZA,Africa,MN
 Emirates,2002'Q3,2621.0,private,AE,Middle East,EK
@@ -373,6 +377,7 @@ LATAM Airlines,2002'Q4,1466.0,public,CL,Latin America,LA
 China Eastern,2002'Q4,1607.0,public,CN,China,MU
 China Southern,2002'Q4,2177.0,public,CN,China,CZ
 Hainan Airlines,2002'Q4,583.0,public,CN,China,HU
+SpiceJet,2002'Q4,0.0,public,IN,India,SG
 Kenya Airlines,2002'Q4,359.0,public,KE,Africa,KQ
 Comair,2002'Q4,125.0,public,ZA,Africa,MN
 Emirates,2002'Q4,2786.0,private,AE,Middle East,EK
@@ -406,6 +411,7 @@ LATAM Airlines,2003'Q1,1514.0,public,CL,Latin America,LA
 China Eastern,2003'Q1,1637.0,public,CN,China,MU
 China Southern,2003'Q1,2161.0,public,CN,China,CZ
 Hainan Airlines,2003'Q1,599.0,public,CN,China,HU
+SpiceJet,2003'Q1,0.0,public,IN,India,SG
 Kenya Airlines,2003'Q1,367.0,public,KE,Africa,KQ
 Comair,2003'Q1,139.0,public,ZA,Africa,MN
 Emirates,2003'Q1,3042.0,private,AE,Middle East,EK
@@ -439,6 +445,7 @@ LATAM Airlines,2003'Q2,1562.0,public,CL,Latin America,LA
 China Eastern,2003'Q2,1666.0,public,CN,China,MU
 China Southern,2003'Q2,2145.0,public,CN,China,CZ
 Hainan Airlines,2003'Q2,615.0,public,CN,China,HU
+SpiceJet,2003'Q2,0.0,public,IN,India,SG
 Kenya Airlines,2003'Q2,376.0,public,KE,Africa,KQ
 Comair,2003'Q2,153.0,public,ZA,Africa,MN
 Emirates,2003'Q2,3299.0,private,AE,Middle East,EK
@@ -472,6 +479,7 @@ LATAM Airlines,2003'Q3,1610.0,public,CL,Latin America,LA
 China Eastern,2003'Q3,1696.0,public,CN,China,MU
 China Southern,2003'Q3,2129.0,public,CN,China,CZ
 Hainan Airlines,2003'Q3,631.0,public,CN,China,HU
+SpiceJet,2003'Q3,0.0,public,IN,India,SG
 Kenya Airlines,2003'Q3,384.0,public,KE,Africa,KQ
 Comair,2003'Q3,167.0,public,ZA,Africa,MN
 Emirates,2003'Q3,3555.0,private,AE,Middle East,EK
@@ -508,6 +516,7 @@ Air China,2003'Q4,2996.0,public,CN,China,CA
 China Eastern,2003'Q4,1725.0,public,CN,China,MU
 China Southern,2003'Q4,2113.0,public,CN,China,CZ
 Hainan Airlines,2003'Q4,648.0,public,CN,China,HU
+SpiceJet,2003'Q4,0.0,public,IN,India,SG
 Kenya Airlines,2003'Q4,393.0,public,KE,Africa,KQ
 Comair,2003'Q4,181.0,public,ZA,Africa,MN
 Emirates,2003'Q4,3811.0,private,AE,Middle East,EK
@@ -544,6 +553,7 @@ Air China,2004'Q1,3273.0,public,CN,China,CA
 China Eastern,2004'Q1,1941.0,public,CN,China,MU
 China Southern,2004'Q1,2311.0,public,CN,China,CZ
 Hainan Airlines,2004'Q1,734.0,public,CN,China,HU
+SpiceJet,2004'Q1,0.0,public,IN,India,SG
 Kenya Airlines,2004'Q1,436.0,public,KE,Africa,KQ
 Comair,2004'Q1,194.0,public,ZA,Africa,MN
 Emirates,2004'Q1,4157.0,private,AE,Middle East,EK
@@ -580,6 +590,7 @@ Air China,2004'Q2,3550.0,public,CN,China,CA
 China Eastern,2004'Q2,2157.0,public,CN,China,MU
 China Southern,2004'Q2,2508.0,public,CN,China,CZ
 Hainan Airlines,2004'Q2,821.0,public,CN,China,HU
+SpiceJet,2004'Q2,0.0,public,IN,India,SG
 Kenya Airlines,2004'Q2,478.0,public,KE,Africa,KQ
 Comair,2004'Q2,208.0,public,ZA,Africa,MN
 Emirates,2004'Q2,4502.0,private,AE,Middle East,EK
@@ -616,6 +627,7 @@ Air China,2004'Q3,3827.0,public,CN,China,CA
 China Eastern,2004'Q3,2373.0,public,CN,China,MU
 China Southern,2004'Q3,2705.0,public,CN,China,CZ
 Hainan Airlines,2004'Q3,908.0,public,CN,China,HU
+SpiceJet,2004'Q3,0.0,public,IN,India,SG
 Kenya Airlines,2004'Q3,521.0,public,KE,Africa,KQ
 Comair,2004'Q3,222.0,public,ZA,Africa,MN
 Emirates,2004'Q3,4848.0,private,AE,Middle East,EK

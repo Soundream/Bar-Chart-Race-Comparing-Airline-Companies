@@ -1,9 +1,8 @@
-// 临时调试开关 - 显示调试信息
-const DEBUG_MODE = false; // 设置为false关闭调试信息
+// Debug开关 - 设置为false时会在动画开始前等待15秒
+const DEBUG_MODE = false;
 
-// 筛选开关 - 控制是否只显示前15大revenue的公司
-const FILTER_TOP_COMPANIES = true; // 设置为false显示所有公司
-const TOP_COMPANIES_COUNT = 15; // 当FILTER_TOP_COMPANIES为true时，显示的公司数量
+// 只显示曾经进入过前15名的航空公司
+const TOP_COMPANIES_COUNT = 15;
 
 // Configuration variables
 const marginBubble = { top: 50, right: 20, bottom: 50, left: 80 };
@@ -147,6 +146,18 @@ if ((leftY >= -30 && leftY <= 100) || (rightY >= -30 && rightY <= 100)) {
         .attr("stroke-dasharray", "5,5");
 }
 
+// Add "Rule of 40" label at fixed position
+svgBubble.append("text")
+    .attr("class", "rule-of-40-label")
+    .attr("x", xScaleBubble(-40)) // EBITDA margin = -40%
+    .attr("y", yScaleBubble(85)) // Revenue growth = 90%
+    .style("text-anchor", "start")
+    .style("font-size", "16px")
+    .style("font-weight", "bold")
+    .style("fill", "green")
+    .style("opacity", 0.9)
+    .text("Rule of 40");
+
   
 // Define custom colors for each region (same as in your bar chart)
 const regionColors = {
@@ -169,6 +180,26 @@ const regionColors = {
 const color = d => regionColors[d.region] || "#7f7f7f"; // Default to gray if region not found
 
 
+// 根据时间和航空公司名称返回正确的IATA代码
+function getDisplayIATA(company, iata, year, quarter) {
+  // 2004年Q2之前（不包括Q2），把"AF/KL"显示为"AF"
+  if (company.includes("Air France") && iata === "AF/KL") {
+    if (year < 2004 || (year === 2004 && quarter <= 2)) {
+      return "AF";
+    }
+  }
+  
+  // 2011年Q1之前（不包括Q1），把"IAG"显示为"BA"
+  if (company.includes("IAG") && iata === "IAG") {
+    if (year < 2011 || (year === 2011 && quarter <= 1)) {
+      return "BA";
+    }
+  }
+  
+  // 其他情况返回原始IATA代码
+  return iata;
+}
+
 // Load and process data
 d3.csv("Bubble.csv").then(function(data) {
   // Parse data
@@ -186,6 +217,9 @@ d3.csv("Bubble.csv").then(function(data) {
     d.quarter = +parts[1];
     // Approximate date as milliseconds since epoch
     d.time = new Date(d.year, (d.quarter - 1) * 3).getTime();
+    
+    // 根据时间和航空公司名称设置正确的IATA代码
+    d.iata = getDisplayIATA(d.company, d.IATA, d.year, d.quarter);
   });
 
   // Filter out invalid data (NaN values for EBITDA or Revenue Growth)
@@ -212,47 +246,40 @@ d3.csv("Bubble.csv").then(function(data) {
   // Set domain for size scale based on revenue
   sizeScaleBubble.domain(d3.extent(data, d => d.revenue));
 
-  // Generate keyframes
+  // 找出所有曾经进入过前15名的航空公司
   const dateValues = Array.from(
     d3.group(data, d => d.time)
   ).sort(([a], [b]) => d3.ascending(a, b));
 
-  // Process each quarter - optionally filter to top companies by revenue
-  const processedDateValues = dateValues.map(([time, quarterData]) => {
-    let processedData;
-    
-    if (FILTER_TOP_COMPANIES) {
-      // Sort by revenue descending and take top companies
-      const sortedData = quarterData.sort((a, b) => b.revenue - a.revenue);
-      processedData = sortedData.slice(0, TOP_COMPANIES_COUNT);
-    } else {
-      // Keep all companies
-      processedData = quarterData;
-    }
-    
-    // 调试信息：检查每个季度的公司数量
-    const dateStr = new Date(time).getFullYear() + "'Q" + (Math.floor(new Date(time).getMonth() / 3) + 1);
-    if (FILTER_TOP_COMPANIES) {
-      console.log(`${dateStr}: 总数据${quarterData.length}条, 前${TOP_COMPANIES_COUNT}名${processedData.length}条`);
-    } else {
-      console.log(`${dateStr}: 显示所有公司${processedData.length}条`);
-    }
-    
-    // 返回前15名数据和完整数据，供插值函数使用
-    return [time, processedData, quarterData];
+  let topCompaniesSet = new Set();
+  dateValues.forEach(([time, quarterData]) => {
+    const sortedData = quarterData.sort((a, b) => b.revenue - a.revenue);
+    const topCompanies = sortedData.slice(0, TOP_COMPANIES_COUNT);
+    topCompanies.forEach(d => topCompaniesSet.add(d.company));
   });
+  console.log(`曾经进入前${TOP_COMPANIES_COUNT}名的航空公司总数: ${topCompaniesSet.size}`);
+  console.log('这些航空公司:', Array.from(topCompaniesSet));
+
+  // 过滤数据，只保留曾经进入过前15名的航空公司
+  data = data.filter(d => topCompaniesSet.has(d.company));
+  console.log("筛选后数据条数:", data.length);
+
+  // 重新生成keyframes
+  const processedDateValues = Array.from(
+    d3.group(data, d => d.time)
+  ).sort(([a], [b]) => d3.ascending(a, b));
 
   const keyframes = [];
   const k = 30; // Number of interpolated frames between dates - 增加到30个keyframe
 
   for (let i = 0; i < processedDateValues.length - 1; i++) {
-    const [timeA, dataA, fullDataA] = processedDateValues[i];
-    const [timeB, dataB, fullDataB] = processedDateValues[i + 1];
+    const [timeA, dataA] = processedDateValues[i];
+    const [timeB, dataB] = processedDateValues[i + 1];
     
     for (let j = 0; j < k; ++j) {
       const t = j / k;
       const currentTime = timeA * (1 - t) + timeB * t;
-      const interpolatedData = interpolateData(dataB, dataA, fullDataB, fullDataA, t);
+      const interpolatedData = interpolateData(dataB, dataA, t);
       keyframes.push([currentTime, interpolatedData]);
     }
   }
@@ -262,18 +289,19 @@ d3.csv("Bubble.csv").then(function(data) {
   const duration = 1000; // Duration of transitions in milliseconds
 
   // 根据调试模式决定动画开始时间
-  console.log("数据加载完成，开始动画");
+  console.log("数据加载完成");
   console.log("处理后的季度数据:", processedDateValues.length);
   console.log("生成的keyframes:", keyframes.length);
   
   if (DEBUG_MODE) {
-    // 调试模式：立即开始动画
+    console.log("Debug模式开启 - 立即开始动画");
     updateChart();
   } else {
-    // 正常模式：等待15秒后开始（用于录屏）
+    console.log("Debug模式关闭 - 15秒后开始动画，请准备录屏");
     setTimeout(() => {
+      console.log("开始动画");
       updateChart();
-    }, 15000);
+    }, 15000); // 15秒延迟
   }
 
   async function updateChart() {
@@ -307,21 +335,11 @@ d3.csv("Bubble.csv").then(function(data) {
         .style("fill", "black")
         .text(dateString);
 
-      // 调试信息 - 只在debug模式下显示公司数量
-      if (DEBUG_MODE) {
-        svgBubble.selectAll(".debug-info").remove();
-        svgBubble.append("text")
-          .attr("class", "debug-info")
-          .attr("x", 10)
-          .attr("y", -60)
-          .style("font-size", "14px")
-          .style("fill", "red")
-          .style("font-weight", "bold")
-          .text(`公司数: ${data.length}`);
-      }
-
+      // 按revenue大小排序数据，确保大的圆在后面（不会被小的圆遮住）
+      const sortedData = [...data].sort((a, b) => a.revenue - b.revenue);
+      
       // Update bubbles - 使用简单的数据绑定，让D3自动处理enter/exit
-      bubbles = bubbles.data(data, d => d.company);
+      bubbles = bubbles.data(sortedData, d => d.company);
 
       // Handle exits
       bubbles.exit()
@@ -347,24 +365,66 @@ d3.csv("Bubble.csv").then(function(data) {
       
       bubbles = newBubbles.merge(bubbles);
 
-      // 临时调试信息 - 在bubble中心显示公司名字
-      if (DEBUG_MODE) {
-        svgBubble.selectAll(".company-label").remove();
-        svgBubble.selectAll(".company-label")
-          .data(data)
-          .enter()
-          .append("text")
-          .attr("class", "company-label")
-          .attr("x", d => xScaleBubble(d.ebitda_margin))
-          .attr("y", d => yScaleBubble(d.revenue_growth))
-          .style("text-anchor", "middle")
-          .style("dominant-baseline", "central")
-          .style("font-size", "10px")
-          .style("fill", "white")
-          .style("font-weight", "bold")
-          .style("pointer-events", "none")
-          .text(d => d.company);
-      }
+      // 更新IATA标签 - 使用D3的enter/update/exit模式
+      let iataLabels = svgBubble.selectAll(".iata-label")
+        .data(sortedData, d => d.company);
+
+      // Handle exits
+      iataLabels.exit()
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+        .remove();
+
+      // Handle enters
+      const newIataLabels = iataLabels.enter()
+        .append("text")
+        .attr("class", "iata-label new-label")
+        .style("text-anchor", "middle")
+        .style("dominant-baseline", "central")
+        .style("alignment-baseline", "central")
+        .style("font-size", d => Math.max(8, Math.min(18, sizeScaleBubble(d.revenue) * 0.4)) + "px")
+        .style("fill", "white")
+        .style("font-weight", "bold")
+        .style("pointer-events", "none")
+        .style("opacity", 0) // 初始透明度为0
+        .text(d => d.iata)
+        .each(function(d) {
+          // 直接设置位置，不使用transition
+          d3.select(this)
+            .attr("x", xScaleBubble(d.ebitda_margin))
+            .attr("y", yScaleBubble(d.revenue_growth));
+        });
+
+      // 对新进入的标签进行淡入动画（位置不变）
+      newIataLabels.transition()
+        .duration(200)
+        .style("opacity", d => {
+          const baseOpacity = d.opacity !== undefined ? d.opacity : 0.85;
+          const overlapOpacity = calculateOverlapOpacity(d, sortedData);
+          return Math.min(baseOpacity, overlapOpacity);
+        })
+        .on("end", function() {
+          // 淡入动画完成后，移除new-label类，让标签参与正常的位置更新
+          this.classList.remove('new-label');
+        });
+
+      // 合并新标签和现有标签
+      iataLabels = newIataLabels.merge(iataLabels);
+
+      // 更新所有标签的位置和样式（包括新进入的标签）
+      iataLabels.transition()
+        .duration(200)
+        .attr("x", d => xScaleBubble(d.ebitda_margin))
+        .attr("y", d => yScaleBubble(d.revenue_growth))
+        .style("font-size", d => Math.max(8, Math.min(18, sizeScaleBubble(d.revenue) * 0.4)) + "px")
+        .style("opacity", d => {
+          // 计算重叠遮罩效果
+          const baseOpacity = d.opacity !== undefined ? d.opacity : 0.85;
+          const overlapOpacity = calculateOverlapOpacity(d, sortedData);
+          return Math.min(baseOpacity, overlapOpacity);
+        })
+        .text(d => d.iata); // 确保文字内容也更新
 
       // Update titles for tooltips
       bubbles.select("title").remove();
@@ -379,28 +439,57 @@ d3.csv("Bubble.csv").then(function(data) {
         .attr("r", d => sizeScaleBubble(d.revenue))
         .style("opacity", d => d.opacity !== undefined ? d.opacity : 0.85);
 
-      // 临时调试信息 - 更新公司标签位置
-      if (DEBUG_MODE) {
-        svgBubble.selectAll(".company-label")
-          .transition()
-          .duration(200)
-          .attr("x", d => xScaleBubble(d.ebitda_margin))
-          .attr("y", d => yScaleBubble(d.revenue_growth));
-      }
-
       // 添加短暂延迟，让动画更平滑
       await new Promise(resolve => setTimeout(resolve, 50));
     }
   }
 
-  function interpolateData(targetQuarterData, sourceQuarterData, fullTargetData, fullSourceData, t) {
+  function calculateOverlapOpacity(currentBubble, allBubbles) {
+    const currentX = xScaleBubble(currentBubble.ebitda_margin);
+    const currentY = yScaleBubble(currentBubble.revenue_growth);
+    const currentR = sizeScaleBubble(currentBubble.revenue);
+    
+    let minOpacity = 0.85;
+    
+    allBubbles.forEach(otherBubble => {
+      if (otherBubble.company === currentBubble.company) return;
+      
+      const otherX = xScaleBubble(otherBubble.ebitda_margin);
+      const otherY = yScaleBubble(otherBubble.revenue_growth);
+      const otherR = sizeScaleBubble(otherBubble.revenue);
+      
+      // 计算距离
+      const distance = Math.sqrt((currentX - otherX) ** 2 + (currentY - otherY) ** 2);
+      
+      // 如果重叠
+      if (distance < currentR + otherR) {
+        // 如果当前bubble在下方（Y坐标更大）或者被更大的bubble覆盖
+        if (currentY > otherY || otherR > currentR) {
+          const overlapRatio = Math.max(0, (currentR + otherR - distance) / (currentR + otherR));
+          // 根据重叠程度和大小关系调整透明度
+          const sizeFactor = otherR > currentR ? 0.7 : 0.5; // 被更大的圆覆盖时透明度降低更多
+          minOpacity = Math.min(minOpacity, 0.85 * (1 - overlapRatio * sizeFactor));
+        }
+      }
+    });
+    
+    return minOpacity;
+  }
+
+  function interpolateData(targetQuarterData, sourceQuarterData, t) {
     const interpolatedData = [];
     
-    // 创建所有公司的集合（源季度前15名 + 目标季度前15名）
+    // 创建所有公司的集合
     const allCompanies = new Set([
       ...sourceQuarterData.map(d => d.company),
       ...targetQuarterData.map(d => d.company)
     ]);
+
+    // 获取季度信息用于调试
+    const sourceQuarter = sourceQuarterData.length > 0 ? 
+      new Date(sourceQuarterData[0].time).getFullYear() + "'Q" + (Math.floor(new Date(sourceQuarterData[0].time).getMonth() / 3) + 1) : "未知";
+    const targetQuarter = targetQuarterData.length > 0 ? 
+      new Date(targetQuarterData[0].time).getFullYear() + "'Q" + (Math.floor(new Date(targetQuarterData[0].time).getMonth() / 3) + 1) : "未知";
 
     // 为每个公司计算插值
     allCompanies.forEach(company => {
@@ -408,55 +497,37 @@ d3.csv("Bubble.csv").then(function(data) {
       const targetData = targetQuarterData.find(d => d.company === company);
       
       if (sourceData && targetData) {
-        // 两个季度都在前15名：正常插值
+        // 两个季度都有数据：正常插值
         interpolatedData.push({
           company: company,
+          iata: targetData.iata,
           ebitda_margin: sourceData.ebitda_margin * (1 - t) + targetData.ebitda_margin * t,
           revenue_growth: sourceData.revenue_growth * (1 - t) + targetData.revenue_growth * t,
           revenue: sourceData.revenue * (1 - t) + targetData.revenue * t,
           region: targetData.region
         });
       } else if (sourceData && !targetData) {
-        // 只在源季度前15名：从原位置淡出
-        const fadeOutDuration = 0.8; // 0.8秒淡出
-        const fadeOutProgress = Math.min(t / (fadeOutDuration / (250 * 30)), 1); // 在0.8秒内完成淡出
-        
+        // 只在源季度有数据：保持原位置
+        console.log(`🔴 航空公司 ${company} (${sourceData.iata}) 在 ${sourceQuarter} 有数据，但在 ${targetQuarter} 没有数据 - 保持原位置`);
         interpolatedData.push({
           company: company,
+          iata: sourceData.iata,
           ebitda_margin: sourceData.ebitda_margin,
           revenue_growth: sourceData.revenue_growth,
           revenue: sourceData.revenue,
-          region: sourceData.region,
-          opacity: 0.85 * (1 - fadeOutProgress) // 逐渐变透明
+          region: sourceData.region
         });
       } else if (!sourceData && targetData) {
-        // 只在目标季度前15名：需要从源季度的实际位置插值到目标位置
-        const fullSourceCompanyData = fullSourceData.find(d => d.company === company);
-        
-        const fadeInDuration = 0.8; // 0.8秒淡入
-        const fadeInProgress = Math.min(t / (fadeInDuration / (250 * 30)), 1); // 在0.8秒内完成淡入
-        
-        if (fullSourceCompanyData) {
-          // 在源季度有完整数据：从实际位置插值到目标位置
-          interpolatedData.push({
-            company: company,
-            ebitda_margin: fullSourceCompanyData.ebitda_margin * (1 - t) + targetData.ebitda_margin * t,
-            revenue_growth: fullSourceCompanyData.revenue_growth * (1 - t) + targetData.revenue_growth * t,
-            revenue: fullSourceCompanyData.revenue * (1 - t) + targetData.revenue * t,
-            region: targetData.region,
-            opacity: 0.85 * fadeInProgress // 逐渐变不透明
-          });
-        } else {
-          // 在源季度没有数据：从目标位置淡入
-          interpolatedData.push({
-            company: company,
-            ebitda_margin: targetData.ebitda_margin,
-            revenue_growth: targetData.revenue_growth,
-            revenue: targetData.revenue,
-            region: targetData.region,
-            opacity: 0.85 * fadeInProgress // 逐渐变不透明
-          });
-        }
+        // 只在目标季度有数据：保持目标位置
+        console.log(`🟢 航空公司 ${company} (${targetData.iata}) 在 ${sourceQuarter} 没有数据，但在 ${targetQuarter} 有数据 - 保持目标位置`);
+        interpolatedData.push({
+          company: company,
+          iata: targetData.iata,
+          ebitda_margin: targetData.ebitda_margin,
+          revenue_growth: targetData.revenue_growth,
+          revenue: targetData.revenue,
+          region: targetData.region
+        });
       }
     });
 

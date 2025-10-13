@@ -7,6 +7,7 @@ Alaska Air,2000'Q1,2110.0,public,US,North America,AS,9.0,14.0
 Hawaiian,2000'Q1,518.0,public,US,North America,HA,17.0,5.0
 SkyWest,2000'Q1,489.0,public,US,North America,OO,20.0,24.0
 Northwest Airlines,2000'Q1,10410.0,merged with Delta 2008,US,North America,NW,12.0,12.0
+TWA,2000'Q1,2482.0,"bankrupt 2001, acquired by AA",US,North America,TW,2.0,0.0
 Air Canada,2000'Q1,4934.0,public,CA,North America,AC,22.0,13.0
 WestJet Airlines,2000'Q1,161.0,public,CA,North America,WS,68.0,23.0
 IAG,2000'Q1,14200.0,public,EU,Europe,IAG,-3.0,12.0
@@ -23,6 +24,7 @@ LATAM Airlines,2000'Q1,1310.0,public,CL,Latin America,LA,14.0,7.0
 China Eastern,2000'Q1,1338.0,public,CN,China,MU,26.0,33.0
 China Southern,2000'Q1,1663.0,public,CN,China,CZ,11.0,26.0
 Hainan Airlines,2000'Q1,240.0,public,CN,China,HU,32.0,29.0
+SpiceJet,2000'Q1,0.0,public,IN,India,SG,100.0,-50.0
 Kenya Airlines,2000'Q1,253.0,public,KE,Africa,KQ,19.0,12.0
 Comair,2000'Q1,112.0,public,ZA,Africa,MN,100.0,18.0
 Emirates,2000'Q1,1609.0,private,AE,Middle East,EK,18.0,4.0
@@ -35,6 +37,7 @@ Alaska Air,2000'Q2,2138.0,public,US,North America,AS,8.0,11.0
 Hawaiian,2000'Q2,548.0,public,US,North America,HA,19.0,4.0
 SkyWest,2000'Q2,503.0,public,US,North America,OO,17.0,23.0
 Northwest Airlines,2000'Q2,10687.0,merged with Delta 2008,US,North America,NW,11.0,11.0
+TWA,2000'Q2,1654.0,"bankrupt 2001, acquired by AA",US,North America,TW,2.0,0.0
 Air Canada,2000'Q2,5359.0,public,CA,North America,AC,27.0,13.0
 WestJet Airlines,2000'Q2,181.0,public,CA,North America,WS,65.0,24.0
 IAG,2000'Q2,14000.0,public,EU,Europe,IAG,-4.0,12.0
@@ -51,6 +54,7 @@ LATAM Airlines,2000'Q2,1354.0,public,CL,Latin America,LA,14.0,8.0
 China Eastern,2000'Q2,1348.0,public,CN,China,MU,18.0,32.0
 China Southern,2000'Q2,1720.0,public,CN,China,CZ,12.0,24.0
 Hainan Airlines,2000'Q2,255.0,public,CN,China,HU,31.0,29.0
+SpiceJet,2000'Q2,0.0,public,IN,India,SG,100.0,-50.0
 Kenya Airlines,2000'Q2,266.0,public,KE,Africa,KQ,20.0,12.0
 Comair,2000'Q2,123.0,public,ZA,Africa,MN,100.0,17.0
 Emirates,2000'Q2,1700.0,private,AE,Middle East,EK,20.0,9.0
@@ -63,6 +67,7 @@ Alaska Air,2000'Q3,2166.0,public,US,North America,AS,6.0,9.0
 Hawaiian,2000'Q3,578.0,public,US,North America,HA,22.0,4.0
 SkyWest,2000'Q3,517.0,public,US,North America,OO,14.0,22.0
 Northwest Airlines,2000'Q3,10963.0,merged with Delta 2008,US,North America,NW,11.0,11.0
+TWA,2000'Q3,827.0,"bankrupt 2001, acquired by AA",US,North America,TW,2.0,0.0
 Air Canada,2000'Q3,5783.0,public,CA,North America,AC,32.0,14.0
 WestJet Airlines,2000'Q3,202.0,public,CA,North America,WS,61.0,24.0
 IAG,2000'Q3,13800.0,public,EU,Europe,IAG,-5.0,12.0
@@ -72,6 +77,7 @@ Deutsche Lufthansa,2000'Q3,15725.0,public,EU,Europe,LH,-6.0,13.0
 Finnair,2000'Q3,1337.0,public,EU,Europe,AY,-17.0,14.0
 Singapore Airlines,2000'Q3,5597.0,public,SG,Asia Pacific,SQ,8.0,25.0
 Japan Airlines,2000'Q3,14089.0,public,JP,Asia Pacific,JL,-3.0,10.0
+ANA Holdings,2000'Q3,10603.0,public,JP,Asia Pacific,NH,0.0,10.0
 Korean Air,2000'Q3,4498.0,public,KR,Asia Pacific,KE,5.0,5.0
 Cathay Pacific,2000'Q3,4280.0,public,HK,Asia Pacific,CX,16.0,25.0
 LATAM Airlines,2000'Q3,1398.0,public,CL,Latin America,LA,14.0,9.0
@@ -113,6 +119,7 @@ Comair,2000'Q4,144.0,public,ZA,Africa,MN,43.0,17.0
 Emirates,2000'Q4,1882.0,private,AE,Middle East,EK,24.0,17.0
 Aeroflot,2000'Q4,1407.0,"taken private 2023, war",RU,Russia,SU,21.0,14.0
 American Airlines,2001'Q1,19520.0,public,US,North America,AA,7.0,9.0
+Delta Air Lines,2001'Q1,16026.0,public,US,North America,DL,0.0,13.0
 Southwest Airlines,2001'Q1,5626.0,public,US,North America,WN,14.0,22.0
 United Airlines,2001'Q1,18549.0,public,US,North America,UA,1.0,5.0
 Alaska Air,2001'Q1,2184.0,public,US,North America,AS,4.0,6.0
@@ -132,6 +139,7 @@ Qantas Airways,2001'Q1,5780.0,public,AU,Asia Pacific,QF,-3.0,27.0
 Japan Airlines,2001'Q1,13333.0,public,JP,Asia Pacific,JL,-10.0,9.0
 ANA Holdings,2001'Q1,10007.0,public,JP,Asia Pacific,NH,-10.0,10.0
 Korean Air,2001'Q1,4518.0,public,KR,Asia Pacific,KE,2.0,4.0
+Asiana Airlines,2001'Q1,1668.0,public,KR,Asia Pacific,OZ,2.0,0.0
 Cathay Pacific,2001'Q1,4324.0,public,HK,Asia Pacific,CX,12.0,24.0
 LATAM Airlines,2001'Q1,1442.0,public,CL,Latin America,LA,10.0,9.0
 China Eastern,2001'Q1,1393.0,public,CN,China,MU,4.0,29.0
@@ -150,6 +158,7 @@ Alaska Air,2001'Q2,2173.0,public,US,North America,AS,2.0,5.0
 JetBlue,2001'Q2,213.0,public,US,North America,B6,100.0,12.0
 Hawaiian,2001'Q2,609.0,public,US,North America,HA,12.0,1.0
 SkyWest,2001'Q2,566.0,public,US,North America,OO,13.0,19.0
+Northwest Airlines,2001'Q2,10573.0,merged with Delta 2008,US,North America,NW,0.0,4.0
 Air Canada,2001'Q2,6160.0,public,CA,North America,AC,18.0,6.0
 WestJet Airlines,2001'Q2,261.0,public,CA,North America,WS,46.0,24.0
 IAG,2001'Q2,12700.0,public,EU,Europe,IAG,-9.0,11.0
@@ -162,6 +171,7 @@ Qantas Airways,2001'Q2,5596.0,public,AU,Asia Pacific,QF,-6.0,27.0
 Japan Airlines,2001'Q2,12914.0,public,JP,Asia Pacific,JL,-11.0,7.0
 ANA Holdings,2001'Q2,9686.0,public,JP,Asia Pacific,NH,-11.0,9.0
 Korean Air,2001'Q2,4503.0,public,KR,Asia Pacific,KE,1.0,3.0
+Asiana Airlines,2001'Q2,1676.0,public,KR,Asia Pacific,OZ,2.0,0.0
 Cathay Pacific,2001'Q2,4184.0,public,HK,Asia Pacific,CX,4.0,22.0
 LATAM Airlines,2001'Q2,1442.0,public,CL,Latin America,LA,7.0,9.0
 China Eastern,2001'Q2,1418.0,public,CN,China,MU,5.0,26.0
@@ -172,10 +182,13 @@ Kenya Airlines,2001'Q2,307.0,public,KE,Africa,KQ,16.0,10.0
 Comair,2001'Q2,144.0,public,ZA,Africa,MN,21.0,13.0
 Emirates,2001'Q2,2004.0,private,AE,Middle East,EK,18.0,16.0
 Aeroflot,2001'Q2,1482.0,"taken private 2023, war",RU,Russia,SU,16.0,12.0
+American Airlines,2001'Q3,19153.0,public,US,North America,AA,0.0,1.0
 Delta Air Lines,2001'Q3,14595.0,public,US,North America,DL,-11.0,5.0
 Southwest Airlines,2001'Q3,5579.0,public,US,North America,WN,4.0,19.0
 United Airlines,2001'Q3,16942.0,public,US,North America,UA,-11.0,-4.0
+Alaska Air,2001'Q3,2163.0,public,US,North America,AS,0.0,5.0
 JetBlue,2001'Q3,266.0,public,US,North America,B6,100.0,12.0
+Hawaiian,2001'Q3,610.0,public,US,North America,HA,7.0,0.0
 SkyWest,2001'Q3,584.0,public,US,North America,OO,13.0,18.0
 Northwest Airlines,2001'Q3,10239.0,merged with Delta 2008,US,North America,NW,-6.0,1.0
 Air Canada,2001'Q3,6137.0,public,CA,North America,AC,8.0,2.0
@@ -189,6 +202,8 @@ Singapore Airlines,2001'Q3,5255.0,public,SG,Asia Pacific,SQ,-6.0,21.0
 Qantas Airways,2001'Q3,5413.0,public,AU,Asia Pacific,QF,-9.0,27.0
 Japan Airlines,2001'Q3,12496.0,public,JP,Asia Pacific,JL,-11.0,6.0
 ANA Holdings,2001'Q3,9364.0,public,JP,Asia Pacific,NH,-12.0,8.0
+Korean Air,2001'Q3,4487.0,public,KR,Asia Pacific,KE,0.0,2.0
+Asiana Airlines,2001'Q3,1685.0,public,KR,Asia Pacific,OZ,2.0,0.0
 Cathay Pacific,2001'Q3,4044.0,public,HK,Asia Pacific,CX,-4.0,21.0
 LATAM Airlines,2001'Q3,1443.0,public,CL,Latin America,LA,4.0,8.0
 China Eastern,2001'Q3,1443.0,public,CN,China,MU,6.0,24.0
@@ -220,12 +235,15 @@ Qantas Airways,2001'Q4,5229.0,public,AU,Asia Pacific,QF,-12.0,27.0
 Japan Airlines,2001'Q4,12077.0,public,JP,Asia Pacific,JL,-12.0,5.0
 ANA Holdings,2001'Q4,9043.0,public,JP,Asia Pacific,NH,-12.0,7.0
 Korean Air,2001'Q4,4472.0,public,KR,Asia Pacific,KE,-1.0,1.0
+Asiana Airlines,2001'Q4,1693.0,public,KR,Asia Pacific,OZ,2.0,0.0
 Cathay Pacific,2001'Q4,3904.0,public,HK,Asia Pacific,CX,-13.0,19.0
+LATAM Airlines,2001'Q4,1443.0,public,CL,Latin America,LA,0.0,8.0
 China Eastern,2001'Q4,1468.0,public,CN,China,MU,7.0,22.0
 China Southern,2001'Q4,2039.0,public,CN,China,CZ,11.0,19.0
 Hainan Airlines,2001'Q4,399.0,public,CN,China,HU,40.0,31.0
 SpiceJet,2001'Q4,1.0,public,IN,India,SG,-7.0,-50.0
 Kenya Airlines,2001'Q4,323.0,public,KE,Africa,KQ,11.0,8.0
+Comair,2001'Q4,144.0,public,ZA,Africa,MN,0.0,10.0
 Emirates,2001'Q4,2126.0,private,AE,Middle East,EK,13.0,14.0
 Aeroflot,2001'Q4,1558.0,"taken private 2023, war",RU,Russia,SU,11.0,10.0
 American Airlines,2002'Q1,18582.0,public,US,North America,AA,-5.0,-2.0
@@ -237,6 +255,7 @@ JetBlue,2002'Q1,399.0,public,US,North America,B6,100.0,14.0
 Hawaiian,2002'Q1,617.0,public,US,North America,HA,1.0,-2.0
 SkyWest,2002'Q1,645.0,public,US,North America,OO,17.0,19.0
 Northwest Airlines,2002'Q1,9923.0,merged with Delta 2008,US,North America,NW,-9.0,-1.0
+Air Canada,2002'Q1,6155.0,public,CA,North America,AC,0.0,-1.0
 WestJet Airlines,2002'Q1,333.0,public,CA,North America,WS,37.0,23.0
 IAG,2002'Q1,11725.0,public,EU,Europe,IAG,-11.0,10.0
 Air France-KLM,2002'Q1,12050.0,public,EU,Europe,AF/KL,-1.0,10.0
@@ -248,7 +267,9 @@ Qantas Airways,2002'Q1,5521.0,public,AU,Asia Pacific,QF,-4.0,23.0
 Japan Airlines,2002'Q1,13393.0,public,JP,Asia Pacific,JL,2.0,5.0
 ANA Holdings,2002'Q1,9312.0,public,JP,Asia Pacific,NH,-6.0,6.0
 Korean Air,2002'Q1,4715.0,public,KR,Asia Pacific,KE,4.0,3.0
+Asiana Airlines,2002'Q1,1813.0,public,KR,Asia Pacific,OZ,9.0,0.0
 Cathay Pacific,2002'Q1,3989.0,public,HK,Asia Pacific,CX,-7.0,21.0
+LATAM Airlines,2002'Q1,1449.0,public,CL,Latin America,LA,0.0,8.0
 China Eastern,2002'Q1,1503.0,public,CN,China,MU,8.0,21.0
 China Southern,2002'Q1,2074.0,public,CN,China,CZ,10.0,20.0
 Hainan Airlines,2002'Q1,445.0,public,CN,China,HU,41.0,31.0
@@ -276,12 +297,15 @@ Finnair,2002'Q2,1611.0,public,EU,Europe,AY,19.0,9.0
 Singapore Airlines,2002'Q2,5537.0,public,SG,Asia Pacific,SQ,3.0,18.0
 Qantas Airways,2002'Q2,5812.0,public,AU,Asia Pacific,QF,5.0,20.0
 Japan Airlines,2002'Q2,14709.0,public,JP,Asia Pacific,JL,16.0,6.0
+ANA Holdings,2002'Q2,9582.0,public,JP,Asia Pacific,NH,0.0,6.0
 Korean Air,2002'Q2,4958.0,public,KR,Asia Pacific,KE,10.0,5.0
+Asiana Airlines,2002'Q2,1932.0,public,KR,Asia Pacific,OZ,15.0,0.0
 Cathay Pacific,2002'Q2,4073.0,public,HK,Asia Pacific,CX,-2.0,24.0
 LATAM Airlines,2002'Q2,1455.0,public,CL,Latin America,LA,1.0,9.0
 China Eastern,2002'Q2,1538.0,public,CN,China,MU,8.0,21.0
 China Southern,2002'Q2,2108.0,public,CN,China,CZ,9.0,20.0
 Hainan Airlines,2002'Q2,491.0,public,CN,China,HU,43.0,31.0
+SpiceJet,2002'Q2,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2002'Q2,341.0,public,KE,Africa,KQ,11.0,7.0
 Comair,2002'Q2,135.0,public,ZA,Africa,MN,-7.0,6.0
 Emirates,2002'Q2,2456.0,private,AE,Middle East,EK,22.0,14.0
@@ -294,6 +318,7 @@ Alaska Air,2002'Q3,2206.0,public,US,North America,AS,2.0,4.0
 JetBlue,2002'Q3,556.0,public,US,North America,B6,100.0,18.0
 Hawaiian,2002'Q3,627.0,public,US,North America,HA,3.0,-5.0
 SkyWest,2002'Q3,731.0,public,US,North America,OO,25.0,21.0
+Northwest Airlines,2002'Q3,9958.0,merged with Delta 2008,US,North America,NW,-2.0,0.0
 Air Canada,2002'Q3,6240.0,public,CA,North America,AC,2.0,2.0
 WestJet Airlines,2002'Q3,398.0,public,CA,North America,WS,41.0,24.0
 IAG,2002'Q3,11575.0,public,EU,Europe,IAG,-5.0,12.0
@@ -306,16 +331,19 @@ Qantas Airways,2002'Q3,6103.0,public,AU,Asia Pacific,QF,14.0,16.0
 Japan Airlines,2002'Q3,16025.0,public,JP,Asia Pacific,JL,30.0,6.0
 ANA Holdings,2002'Q3,9851.0,public,JP,Asia Pacific,NH,6.0,5.0
 Korean Air,2002'Q3,5200.0,public,KR,Asia Pacific,KE,16.0,6.0
+Asiana Airlines,2002'Q3,2052.0,public,KR,Asia Pacific,OZ,22.0,0.0
 Cathay Pacific,2002'Q3,4158.0,public,HK,Asia Pacific,CX,3.0,26.0
 LATAM Airlines,2002'Q3,1460.0,public,CL,Latin America,LA,1.0,9.0
 China Eastern,2002'Q3,1573.0,public,CN,China,MU,9.0,21.0
 China Southern,2002'Q3,2143.0,public,CN,China,CZ,8.0,21.0
 Hainan Airlines,2002'Q3,537.0,public,CN,China,HU,44.0,30.0
+SpiceJet,2002'Q3,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2002'Q3,350.0,public,KE,Africa,KQ,11.0,7.0
 Comair,2002'Q3,130.0,public,ZA,Africa,MN,-10.0,5.0
 Emirates,2002'Q3,2621.0,private,AE,Middle East,EK,27.0,14.0
 Aeroflot,2002'Q3,1572.0,"taken private 2023, war",RU,Russia,SU,4.0,16.0
 American Airlines,2002'Q4,17420.0,public,US,North America,AA,-8.0,-2.0
+Delta Air Lines,2002'Q4,13866.0,public,US,North America,DL,0.0,2.0
 Southwest Airlines,2002'Q4,5522.0,public,US,North America,WN,-1.0,14.0
 United Airlines,2002'Q4,15822.0,public,US,North America,UA,-2.0,-11.0
 Alaska Air,2002'Q4,2224.0,public,US,North America,AS,3.0,5.0
@@ -335,15 +363,18 @@ Qantas Airways,2002'Q4,6395.0,public,AU,Asia Pacific,QF,22.0,12.0
 Japan Airlines,2002'Q4,17341.0,public,JP,Asia Pacific,JL,44.0,6.0
 ANA Holdings,2002'Q4,10120.0,public,JP,Asia Pacific,NH,12.0,5.0
 Korean Air,2002'Q4,5443.0,public,KR,Asia Pacific,KE,22.0,8.0
+Asiana Airlines,2002'Q4,2171.0,public,KR,Asia Pacific,OZ,28.0,0.0
 Cathay Pacific,2002'Q4,4243.0,public,HK,Asia Pacific,CX,9.0,29.0
 LATAM Airlines,2002'Q4,1466.0,public,CL,Latin America,LA,2.0,10.0
 China Eastern,2002'Q4,1607.0,public,CN,China,MU,9.0,21.0
 China Southern,2002'Q4,2177.0,public,CN,China,CZ,7.0,21.0
 Hainan Airlines,2002'Q4,583.0,public,CN,China,HU,46.0,30.0
+SpiceJet,2002'Q4,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2002'Q4,359.0,public,KE,Africa,KQ,11.0,6.0
 Comair,2002'Q4,125.0,public,ZA,Africa,MN,-13.0,3.0
 Emirates,2002'Q4,2786.0,private,AE,Middle East,EK,31.0,14.0
 Aeroflot,2002'Q4,1576.0,"taken private 2023, war",RU,Russia,SU,1.0,18.0
+American Airlines,2003'Q1,17425.0,public,US,North America,AA,-6.0,0.0
 Delta Air Lines,2003'Q1,13977.0,public,US,North America,DL,1.0,2.0
 Southwest Airlines,2003'Q1,5626.0,public,US,North America,WN,1.0,14.0
 United Airlines,2003'Q1,15599.0,public,US,North America,UA,-3.0,-9.0
@@ -354,6 +385,7 @@ SkyWest,2003'Q1,803.0,public,US,North America,OO,25.0,22.0
 Northwest Airlines,2003'Q1,10001.0,merged with Delta 2008,US,North America,NW,1.0,1.0
 Air Canada,2003'Q1,6330.0,public,CA,North America,AC,3.0,1.0
 WestJet Airlines,2003'Q1,489.0,public,CA,North America,WS,46.0,25.0
+IAG,2003'Q1,11725.0,public,EU,Europe,IAG,0.0,13.0
 Air France-KLM,2003'Q1,13475.0,public,EU,Europe,AF/KL,12.0,10.0
 Ryanair,2003'Q1,1017.0,public,EU,Europe,FR,62.0,39.0
 Deutsche Lufthansa,2003'Q1,16800.0,public,EU,Europe,LH,13.0,12.0
@@ -371,6 +403,7 @@ LATAM Airlines,2003'Q1,1514.0,public,CL,Latin America,LA,4.0,9.0
 China Eastern,2003'Q1,1637.0,public,CN,China,MU,9.0,19.0
 China Southern,2003'Q1,2161.0,public,CN,China,CZ,4.0,20.0
 Hainan Airlines,2003'Q1,599.0,public,CN,China,HU,37.0,23.0
+SpiceJet,2003'Q1,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2003'Q1,367.0,public,KE,Africa,KQ,11.0,8.0
 Comair,2003'Q1,139.0,public,ZA,Africa,MN,1.0,2.0
 Emirates,2003'Q1,3042.0,private,AE,Middle East,EK,32.0,15.0
@@ -398,11 +431,13 @@ Japan Airlines,2003'Q2,17931.0,public,JP,Asia Pacific,JL,25.0,4.0
 ANA Holdings,2003'Q2,10897.0,public,JP,Asia Pacific,NH,14.0,6.0
 Korean Air,2003'Q2,5389.0,public,KR,Asia Pacific,KE,10.0,7.0
 Asiana Airlines,2003'Q2,2140.0,public,KR,Asia Pacific,OZ,13.0,1.0
+Cathay Pacific,2003'Q2,4041.0,public,HK,Asia Pacific,CX,0.0,26.0
 Gol Linhas Aereas,2003'Q2,338.0,public,BR,Latin America,G3,100.0,14.0
 LATAM Airlines,2003'Q2,1562.0,public,CL,Latin America,LA,7.0,9.0
 China Eastern,2003'Q2,1666.0,public,CN,China,MU,8.0,18.0
 China Southern,2003'Q2,2145.0,public,CN,China,CZ,2.0,18.0
 Hainan Airlines,2003'Q2,615.0,public,CN,China,HU,29.0,15.0
+SpiceJet,2003'Q2,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2003'Q2,376.0,public,KE,Africa,KQ,10.0,10.0
 Comair,2003'Q2,153.0,public,ZA,Africa,MN,16.0,1.0
 Emirates,2003'Q2,3299.0,private,AE,Middle East,EK,34.0,16.0
@@ -436,10 +471,12 @@ LATAM Airlines,2003'Q3,1610.0,public,CL,Latin America,LA,10.0,8.0
 China Eastern,2003'Q3,1696.0,public,CN,China,MU,8.0,17.0
 China Southern,2003'Q3,2129.0,public,CN,China,CZ,-1.0,16.0
 Hainan Airlines,2003'Q3,631.0,public,CN,China,HU,20.0,8.0
+SpiceJet,2003'Q3,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2003'Q3,384.0,public,KE,Africa,KQ,10.0,11.0
 Comair,2003'Q3,167.0,public,ZA,Africa,MN,30.0,1.0
 Emirates,2003'Q3,3555.0,private,AE,Middle East,EK,35.0,16.0
 Aeroflot,2003'Q3,1710.0,"taken private 2023, war",RU,Russia,SU,9.0,16.0
+American Airlines,2003'Q4,17440.0,public,US,North America,AA,0.0,3.0
 Delta Air Lines,2003'Q4,14308.0,public,US,North America,DL,3.0,2.0
 Southwest Airlines,2003'Q4,5937.0,public,US,North America,WN,8.0,15.0
 United Airlines,2003'Q4,14928.0,public,US,North America,UA,-6.0,-2.0
@@ -467,7 +504,10 @@ Gol Linhas Aereas,2003'Q4,485.0,public,BR,Latin America,G3,100.0,18.0
 LATAM Airlines,2003'Q4,1658.0,public,CL,Latin America,LA,13.0,8.0
 China Eastern,2003'Q4,1725.0,public,CN,China,MU,7.0,15.0
 China Southern,2003'Q4,2113.0,public,CN,China,CZ,-3.0,15.0
+Hainan Airlines,2003'Q4,648.0,public,CN,China,HU,11.0,0.0
+SpiceJet,2003'Q4,0.0,public,IN,India,SG,-30.0,-50.0
 Kenya Airlines,2003'Q4,393.0,public,KE,Africa,KQ,10.0,13.0
+Comair,2003'Q4,181.0,public,ZA,Africa,MN,44.0,0.0
 Emirates,2003'Q4,3811.0,private,AE,Middle East,EK,37.0,17.0
 Aeroflot,2003'Q4,1755.0,"taken private 2023, war",RU,Russia,SU,11.0,15.0
 American Airlines,2004'Q1,17741.0,public,US,North America,AA,2.0,4.0
@@ -501,11 +541,13 @@ Air China,2004'Q1,3273.0,public,CN,China,CA,37.0,24.0
 China Eastern,2004'Q1,1941.0,public,CN,China,MU,18.0,17.0
 China Southern,2004'Q1,2311.0,public,CN,China,CZ,7.0,14.0
 Hainan Airlines,2004'Q1,734.0,public,CN,China,HU,22.0,7.0
+SpiceJet,2004'Q1,0.0,public,IN,India,SG,100.0,-50.0
 Kenya Airlines,2004'Q1,436.0,public,KE,Africa,KQ,18.0,15.0
 Comair,2004'Q1,194.0,public,ZA,Africa,MN,41.0,1.0
 Emirates,2004'Q1,4157.0,private,AE,Middle East,EK,37.0,19.0
 Aeroflot,2004'Q1,1859.0,"taken private 2023, war",RU,Russia,SU,14.0,15.0
 American Airlines,2004'Q2,18043.0,public,US,North America,AA,4.0,5.0
+Delta Air Lines,2004'Q2,14772.0,public,US,North America,DL,5.0,0.0
 Southwest Airlines,2004'Q2,6234.0,public,US,North America,WN,9.0,14.0
 United Airlines,2004'Q2,15660.0,public,US,North America,UA,2.0,-1.0
 Alaska Air,2004'Q2,2584.0,public,US,North America,AS,11.0,9.0
@@ -535,6 +577,7 @@ Air China,2004'Q2,3550.0,public,CN,China,CA,37.0,24.0
 China Eastern,2004'Q2,2157.0,public,CN,China,MU,29.0,18.0
 China Southern,2004'Q2,2508.0,public,CN,China,CZ,17.0,14.0
 Hainan Airlines,2004'Q2,821.0,public,CN,China,HU,32.0,14.0
+SpiceJet,2004'Q2,0.0,public,IN,India,SG,100.0,-50.0
 Kenya Airlines,2004'Q2,478.0,public,KE,Africa,KQ,27.0,16.0
 Comair,2004'Q2,208.0,public,ZA,Africa,MN,37.0,2.0
 Emirates,2004'Q2,4502.0,private,AE,Middle East,EK,37.0,22.0
@@ -542,6 +585,7 @@ Aeroflot,2004'Q2,1964.0,"taken private 2023, war",RU,Russia,SU,18.0,15.0
 American Airlines,2004'Q3,18344.0,public,US,North America,AA,5.0,5.0
 Delta Air Lines,2004'Q3,15003.0,public,US,North America,DL,6.0,-1.0
 Southwest Airlines,2004'Q3,6382.0,public,US,North America,WN,9.0,13.0
+United Airlines,2004'Q3,16025.0,public,US,North America,UA,6.0,0.0
 Alaska Air,2004'Q3,2654.0,public,US,North America,AS,11.0,10.0
 JetBlue,2004'Q3,1198.0,public,US,North America,B6,34.0,17.0
 Allegiant,2004'Q3,80.0,public,US,North America,G4,81.0,9.0
@@ -569,6 +613,7 @@ Air China,2004'Q3,3827.0,public,CN,China,CA,37.0,24.0
 China Eastern,2004'Q3,2373.0,public,CN,China,MU,39.0,19.0
 China Southern,2004'Q3,2705.0,public,CN,China,CZ,27.0,14.0
 Hainan Airlines,2004'Q3,908.0,public,CN,China,HU,43.0,22.0
+SpiceJet,2004'Q3,0.0,public,IN,India,SG,100.0,-50.0
 Kenya Airlines,2004'Q3,521.0,public,KE,Africa,KQ,35.0,18.0
 Comair,2004'Q3,222.0,public,ZA,Africa,MN,34.0,4.0
 Emirates,2004'Q3,4848.0,private,AE,Middle East,EK,36.0,24.0
@@ -576,6 +621,7 @@ Aeroflot,2004'Q3,2068.0,"taken private 2023, war",RU,Russia,SU,21.0,15.0
 American Airlines,2004'Q4,18645.0,public,US,North America,AA,7.0,6.0
 Delta Air Lines,2004'Q4,15235.0,public,US,North America,DL,6.0,-2.0
 Southwest Airlines,2004'Q4,6530.0,public,US,North America,WN,10.0,13.0
+United Airlines,2004'Q4,16391.0,public,US,North America,UA,10.0,0.0
 Alaska Air,2004'Q4,2724.0,public,US,North America,AS,11.0,11.0
 JetBlue,2004'Q4,1265.0,public,US,North America,B6,27.0,15.0
 Allegiant,2004'Q4,90.0,public,US,North America,G4,81.0,9.0
@@ -647,12 +693,14 @@ Emirates,2005'Q1,5543.0,private,AE,Middle East,EK,34.0,26.0
 Aeroflot,2005'Q1,2280.0,"taken private 2023, war",RU,Russia,SU,23.0,15.0
 Air Arabia,2005'Q1,66.0,public,AE,Middle East,G9,100.0,2.0
 American Airlines,2005'Q2,19679.0,public,US,North America,AA,9.0,6.0
+Delta Air Lines,2005'Q2,15858.0,public,US,North America,DL,7.0,0.0
 Southwest Airlines,2005'Q2,7057.0,public,US,North America,WN,13.0,14.0
 United Airlines,2005'Q2,16885.0,public,US,North America,UA,8.0,2.0
 Alaska Air,2005'Q2,2850.0,public,US,North America,AS,10.0,11.0
 JetBlue,2005'Q2,1483.0,public,US,North America,B6,31.0,12.0
 Allegiant,2005'Q2,111.0,public,US,North America,G4,64.0,10.0
 SkyWest,2005'Q2,1560.0,public,US,North America,OO,50.0,18.0
+Northwest Airlines,2005'Q2,11783.0,merged with Delta 2008,US,North America,NW,10.0,0.0
 Air Canada,2005'Q2,7710.0,public,CA,North America,AC,12.0,5.0
 WestJet Airlines,2005'Q2,1034.0,public,CA,North America,WS,34.0,20.0
 IAG,2005'Q2,14850.0,public,EU,Europe,IAG,12.0,16.0
@@ -665,6 +713,7 @@ Finnair,2005'Q2,2279.0,public,EU,Europe,AY,6.0,8.0
 Singapore Airlines,2005'Q2,7763.0,public,SG,Asia Pacific,SQ,19.0,21.0
 Qantas Airways,2005'Q2,8708.0,public,AU,Asia Pacific,QF,13.0,18.0
 Japan Airlines,2005'Q2,19287.0,public,JP,Asia Pacific,JL,1.0,4.0
+ANA Holdings,2005'Q2,11851.0,public,JP,Asia Pacific,NH,0.0,12.0
 Korean Air,2005'Q2,7445.0,public,KR,Asia Pacific,KE,21.0,7.0
 Asiana Airlines,2005'Q2,3031.0,public,KR,Asia Pacific,OZ,23.0,4.0
 Cathay Pacific,2005'Q2,5796.0,public,HK,Asia Pacific,CX,31.0,19.0
@@ -682,6 +731,7 @@ Emirates,2005'Q2,5893.0,private,AE,Middle East,EK,32.0,26.0
 Aeroflot,2005'Q2,2387.0,"taken private 2023, war",RU,Russia,SU,22.0,15.0
 Air Arabia,2005'Q2,81.0,public,AE,Middle East,G9,100.0,4.0
 American Airlines,2005'Q3,20195.0,public,US,North America,AA,10.0,5.0
+Delta Air Lines,2005'Q3,16169.0,public,US,North America,DL,8.0,0.0
 Southwest Airlines,2005'Q3,7321.0,public,US,North America,WN,15.0,15.0
 United Airlines,2005'Q3,17132.0,public,US,North America,UA,7.0,3.0
 Alaska Air,2005'Q3,2912.0,public,US,North America,AS,10.0,11.0
@@ -733,14 +783,17 @@ IAG,2005'Q4,15500.0,public,EU,Europe,IAG,9.0,17.0
 Air France-KLM,2005'Q4,26600.0,public,EU,Europe,AF/KL,24.0,12.0
 Ryanair,2005'Q4,2049.0,public,EU,Europe,FR,20.0,30.0
 easyJet,2005'Q4,2369.0,public,EU,Europe,U2,21.0,6.0
+Deutsche Lufthansa,2005'Q4,22400.0,public,EU,Europe,LH,0.0,13.0
 Norwegian Air Shuttle,2005'Q4,291.0,public,EU,Europe,DY,45.0,3.0
 Finnair,2005'Q4,2241.0,public,EU,Europe,AY,-3.0,9.0
 Singapore Airlines,2005'Q4,8245.0,public,SG,Asia Pacific,SQ,13.0,20.0
 Qantas Airways,2005'Q4,9595.0,public,AU,Asia Pacific,QF,23.0,18.0
+Japan Airlines,2005'Q4,18734.0,public,JP,Asia Pacific,JL,-6.0,0.0
 ANA Holdings,2005'Q4,11659.0,public,JP,Asia Pacific,NH,-3.0,12.0
 Korean Air,2005'Q4,7725.0,public,KR,Asia Pacific,KE,8.0,7.0
 Asiana Airlines,2005'Q4,3112.0,public,KR,Asia Pacific,OZ,5.0,2.0
 Cathay Pacific,2005'Q4,6567.0,public,HK,Asia Pacific,CX,31.0,16.0
+Copa Holdings,2005'Q4,609.0,public,PA,Latin America,CM,50.0,0.0
 Gol Linhas Aereas,2005'Q4,1141.0,public,BR,Latin America,G3,83.0,20.0
 LATAM Airlines,2005'Q4,2563.0,public,CL,Latin America,LA,20.0,11.0
 Air China,2005'Q4,4763.0,public,CN,China,CA,16.0,23.0
@@ -749,6 +802,7 @@ China Southern,2005'Q4,4754.0,public,CN,China,CZ,64.0,8.0
 Hainan Airlines,2005'Q4,1231.0,public,CN,China,HU,24.0,19.0
 SpiceJet,2005'Q4,10.0,public,IN,India,SG,100.0,-11.0
 Kenya Airlines,2005'Q4,741.0,public,KE,Africa,KQ,31.0,11.0
+Comair,2005'Q4,258.0,public,ZA,Africa,MN,10.0,0.0
 Emirates,2005'Q4,6593.0,private,AE,Middle East,EK,27.0,25.0
 Aeroflot,2005'Q4,2602.0,"taken private 2023, war",RU,Russia,SU,20.0,15.0
 Air Arabia,2005'Q4,113.0,public,AE,Middle East,G9,100.0,8.0
@@ -761,6 +815,7 @@ JetBlue,2006'Q1,1867.0,public,US,North America,B6,36.0,10.0
 Allegiant,2006'Q1,160.0,public,US,North America,G4,56.0,11.0
 Hawaiian,2006'Q1,604.0,public,US,North America,HA,75.0,4.0
 SkyWest,2006'Q1,2252.0,public,US,North America,OO,67.0,17.0
+Northwest Airlines,2006'Q1,12357.0,merged with Delta 2008,US,North America,NW,7.0,0.0
 Air Canada,2006'Q1,8251.0,public,CA,North America,AC,10.0,8.0
 WestJet Airlines,2006'Q1,1272.0,public,CA,North America,WS,34.0,25.0
 Exchange Income Corporation,2006'Q1,55.0,public,CA,North America,,49.0,13.0
@@ -774,6 +829,7 @@ Finnair,2006'Q1,2341.0,public,EU,Europe,AY,2.0,8.0
 Singapore Airlines,2006'Q1,8572.0,public,SG,Asia Pacific,SQ,14.0,20.0
 Qantas Airways,2006'Q1,9733.0,public,AU,Asia Pacific,QF,18.0,17.0
 Japan Airlines,2006'Q1,18942.0,public,JP,Asia Pacific,JL,-3.0,2.0
+ANA Holdings,2006'Q1,11910.0,public,JP,Asia Pacific,NH,0.0,12.0
 Korean Air,2006'Q1,8028.0,public,KR,Asia Pacific,KE,10.0,7.0
 Asiana Airlines,2006'Q1,3315.0,public,KR,Asia Pacific,OZ,11.0,3.0
 Cathay Pacific,2006'Q1,6890.0,public,HK,Asia Pacific,CX,28.0,16.0
@@ -962,6 +1018,7 @@ Southwest Airlines,2007'Q2,9474.0,public,US,North America,WN,14.0,15.0
 United Airlines,2007'Q2,19742.0,public,US,North America,UA,8.0,8.0
 Alaska Air,2007'Q2,3420.0,public,US,North America,AS,9.0,7.0
 JetBlue,2007'Q2,2604.0,public,US,North America,B6,30.0,12.0
+Spirit Airlines,2007'Q2,653.0,public,US,North America,NK,40.0,0.0
 Allegiant,2007'Q2,302.0,public,US,North America,G4,66.0,15.0
 Hawaiian,2007'Q2,935.0,public,US,North America,HA,43.0,5.0
 SkyWest,2007'Q2,3244.0,public,US,North America,OO,33.0,17.0
@@ -1007,6 +1064,7 @@ Spirit Airlines,2007'Q3,708.0,public,US,North America,NK,40.0,3.0
 Allegiant,2007'Q3,331.0,public,US,North America,G4,57.0,16.0
 Hawaiian,2007'Q3,959.0,public,US,North America,HA,27.0,5.0
 SkyWest,2007'Q3,3309.0,public,US,North America,OO,21.0,17.0
+Northwest Airlines,2007'Q3,12538.0,merged with Delta 2008,US,North America,NW,0.0,12.0
 Air Canada,2007'Q3,10225.0,public,CA,North America,AC,20.0,10.0
 WestJet Airlines,2007'Q3,1992.0,public,CA,North America,WS,39.0,22.0
 Exchange Income Corporation,2007'Q3,99.0,public,CA,North America,,47.0,14.0
@@ -1048,6 +1106,7 @@ Spirit Airlines,2007'Q4,763.0,public,US,North America,NK,40.0,5.0
 Allegiant,2007'Q4,361.0,public,US,North America,G4,48.0,17.0
 Hawaiian,2007'Q4,983.0,public,US,North America,HA,11.0,5.0
 SkyWest,2007'Q4,3374.0,public,US,North America,OO,8.0,16.0
+Northwest Airlines,2007'Q4,12528.0,merged with Delta 2008,US,North America,NW,0.0,13.0
 Air Canada,2007'Q4,10753.0,public,CA,North America,AC,24.0,10.0
 WestJet Airlines,2007'Q4,2153.0,public,CA,North America,WS,43.0,22.0
 Exchange Income Corporation,2007'Q4,107.0,public,CA,North America,,46.0,14.0
@@ -1169,6 +1228,7 @@ Southwest Airlines,2008'Q3,10733.0,public,US,North America,WN,11.0,11.0
 United Airlines,2008'Q3,20181.0,public,US,North America,UA,1.0,-1.0
 Alaska Air,2008'Q3,3623.0,public,US,North America,AS,5.0,4.0
 JetBlue,2008'Q3,3255.0,public,US,North America,B6,20.0,10.0
+Spirit Airlines,2008'Q3,781.0,public,US,North America,NK,13.0,0.0
 Allegiant,2008'Q3,468.0,public,US,North America,G4,42.0,16.0
 Hawaiian,2008'Q3,1154.0,public,US,North America,HA,20.0,7.0
 SkyWest,2008'Q3,3466.0,public,US,North America,OO,5.0,14.0
@@ -1191,6 +1251,7 @@ Korean Air,2008'Q3,8665.0,public,KR,Asia Pacific,KE,-8.0,2.0
 Asiana Airlines,2008'Q3,3684.0,public,KR,Asia Pacific,OZ,-10.0,1.0
 Cathay Pacific,2008'Q3,10807.0,public,HK,Asia Pacific,CX,17.0,2.0
 Copa Holdings,2008'Q3,1225.0,public,PA,Latin America,CM,24.0,21.0
+Gol Linhas Aereas,2008'Q3,2759.0,public,BR,Latin America,G3,12.0,0.0
 LATAM Airlines,2008'Q3,4101.0,public,CL,Latin America,LA,19.0,18.0
 Air China,2008'Q3,7606.0,public,CN,China,CA,13.0,12.0
 China Eastern,2008'Q3,6027.0,public,CN,China,MU,8.0,-11.0
@@ -1206,6 +1267,7 @@ Jazeera Airways,2008'Q3,170.0,public,KW,Middle East,J9,47.0,16.0
 American Airlines,2008'Q4,23766.0,public,US,North America,AA,4.0,2.0
 Delta Air Lines,2008'Q4,22697.0,public,US,North America,DL,18.0,6.0
 Southwest Airlines,2008'Q4,11023.0,public,US,North America,WN,12.0,10.0
+United Airlines,2008'Q4,20194.0,public,US,North America,UA,0.0,-4.0
 Alaska Air,2008'Q4,3663.0,public,US,North America,AS,4.0,1.0
 JetBlue,2008'Q4,3392.0,public,US,North America,B6,19.0,10.0
 Spirit Airlines,2008'Q4,787.0,public,US,North America,NK,3.0,-2.0
@@ -1227,9 +1289,11 @@ Singapore Airlines,2008'Q4,10528.0,public,SG,Asia Pacific,SQ,-9.0,16.0
 Qantas Airways,2008'Q4,15586.0,public,AU,Asia Pacific,QF,23.0,23.0
 Japan Airlines,2008'Q4,19889.0,public,JP,Asia Pacific,JL,-11.0,3.0
 ANA Holdings,2008'Q4,14196.0,public,JP,Asia Pacific,NH,-4.0,9.0
+Korean Air,2008'Q4,8324.0,public,KR,Asia Pacific,KE,-14.0,0.0
 Asiana Airlines,2008'Q4,3530.0,public,KR,Asia Pacific,OZ,-15.0,-1.0
 Cathay Pacific,2008'Q4,11169.0,public,HK,Asia Pacific,CX,15.0,-3.0
 Copa Holdings,2008'Q4,1289.0,public,PA,Latin America,CM,24.0,21.0
+Gol Linhas Aereas,2008'Q4,2744.0,public,BR,Latin America,G3,-2.0,0.0
 LATAM Airlines,2008'Q4,4283.0,public,CL,Latin America,LA,20.0,20.0
 Air China,2008'Q4,7807.0,public,CN,China,CA,11.0,9.0
 China Eastern,2008'Q4,6069.0,public,CN,China,MU,3.0,-18.0
@@ -1248,6 +1312,7 @@ Southwest Airlines,2009'Q1,10855.0,public,US,North America,WN,7.0,9.0
 United Airlines,2009'Q1,19229.0,public,US,North America,UA,-5.0,-2.0
 Alaska Air,2009'Q1,3597.0,public,US,North America,AS,2.0,5.0
 JetBlue,2009'Q1,3367.0,public,US,North America,B6,14.0,11.0
+Spirit Airlines,2009'Q1,765.0,public,US,North America,NK,0.0,2.0
 Allegiant,2009'Q1,517.0,public,US,North America,G4,33.0,19.0
 Hawaiian,2009'Q1,1204.0,public,US,North America,HA,17.0,9.0
 SkyWest,2009'Q1,3276.0,public,US,North America,OO,-4.0,14.0
@@ -1260,6 +1325,7 @@ Air France-KLM,2009'Q1,34850.0,public,EU,Europe,AF/KL,3.0,8.0
 Ryanair,2009'Q1,3943.0,public,EU,Europe,FR,-6.0,14.0
 easyJet,2009'Q1,4264.0,public,EU,Europe,U2,13.0,5.0
 Deutsche Lufthansa,2009'Q1,35200.0,public,EU,Europe,LH,5.0,12.0
+Norwegian Air Shuttle,2009'Q1,985.0,public,EU,Europe,DY,21.0,0.0
 Finnair,2009'Q1,3051.0,public,EU,Europe,AY,-6.0,1.0
 Singapore Airlines,2009'Q1,10161.0,public,SG,Asia Pacific,SQ,-10.0,16.0
 Qantas Airways,2009'Q1,14642.0,public,AU,Asia Pacific,QF,11.0,20.0
@@ -1302,6 +1368,7 @@ Ryanair,2009'Q2,3971.0,public,EU,Europe,FR,-3.0,17.0
 easyJet,2009'Q2,4275.0,public,EU,Europe,U2,9.0,5.0
 Deutsche Lufthansa,2009'Q2,33800.0,public,EU,Europe,LH,-2.0,11.0
 Norwegian Air Shuttle,2009'Q2,1081.0,public,EU,Europe,DY,28.0,3.0
+Finnair,2009'Q2,2923.0,public,EU,Europe,AY,-9.0,0.0
 Singapore Airlines,2009'Q2,9793.0,public,SG,Asia Pacific,SQ,-12.0,16.0
 Qantas Airways,2009'Q2,13697.0,public,AU,Asia Pacific,QF,-1.0,17.0
 Japan Airlines,2009'Q2,17278.0,public,JP,Asia Pacific,JL,-19.0,14.0
@@ -1339,9 +1406,11 @@ WestJet Airlines,2009'Q3,2156.0,public,CA,North America,WS,3.0,16.0
 Exchange Income Corporation,2009'Q3,184.0,public,CA,North America,,48.0,14.0
 IAG,2009'Q3,13525.0,public,EU,Europe,IAG,-20.0,6.0
 Air France-KLM,2009'Q3,31150.0,public,EU,Europe,AF/KL,-12.0,4.0
+Ryanair,2009'Q3,4000.0,public,EU,Europe,FR,0.0,19.0
 easyJet,2009'Q3,4286.0,public,EU,Europe,U2,5.0,5.0
 Deutsche Lufthansa,2009'Q3,32400.0,public,EU,Europe,LH,-9.0,10.0
 Norwegian Air Shuttle,2009'Q3,1177.0,public,EU,Europe,DY,36.0,7.0
+Finnair,2009'Q3,2796.0,public,EU,Europe,AY,-13.0,0.0
 Singapore Airlines,2009'Q3,9426.0,public,SG,Asia Pacific,SQ,-13.0,15.0
 Qantas Airways,2009'Q3,12752.0,public,AU,Asia Pacific,QF,-12.0,14.0
 Japan Airlines,2009'Q3,15972.0,public,JP,Asia Pacific,JL,-22.0,19.0
@@ -1387,6 +1456,7 @@ Singapore Airlines,2009'Q4,9059.0,public,SG,Asia Pacific,SQ,-14.0,15.0
 Qantas Airways,2009'Q4,11807.0,public,AU,Asia Pacific,QF,-24.0,11.0
 Japan Airlines,2009'Q4,14666.0,public,JP,Asia Pacific,JL,-26.0,24.0
 ANA Holdings,2009'Q4,13173.0,public,JP,Asia Pacific,NH,-7.0,5.0
+Korean Air,2009'Q4,8296.0,public,KR,Asia Pacific,KE,0.0,2.0
 Asiana Airlines,2009'Q4,3511.0,public,KR,Asia Pacific,OZ,-1.0,-5.0
 Cathay Pacific,2009'Q4,8775.0,public,HK,Asia Pacific,CX,-21.0,16.0
 Copa Holdings,2009'Q4,1253.0,public,PA,Latin America,CM,-3.0,22.0
@@ -1403,6 +1473,7 @@ Air Arabia,2009'Q4,549.0,public,AE,Middle East,G9,-2.0,15.0
 Jazeera Airways,2009'Q4,170.0,public,KW,Middle East,J9,-7.0,-11.0
 American Airlines,2010'Q1,20480.0,public,US,North America,AA,-9.0,3.0
 Delta Air Lines,2010'Q1,28986.0,public,US,North America,DL,21.0,8.0
+Southwest Airlines,2010'Q1,10789.0,public,US,North America,WN,0.0,10.0
 United Airlines,2010'Q1,18083.0,public,US,North America,UA,-4.0,8.0
 Alaska Air,2010'Q1,3508.0,public,US,North America,AS,-2.0,16.0
 JetBlue,2010'Q1,3414.0,public,US,North America,B6,1.0,16.0
@@ -1419,6 +1490,7 @@ Ryanair,2010'Q1,4310.0,public,EU,Europe,FR,9.0,21.0
 easyJet,2010'Q1,4406.0,public,EU,Europe,U2,3.0,5.0
 Deutsche Lufthansa,2010'Q1,32325.0,public,EU,Europe,LH,-7.0,10.0
 Norwegian Air Shuttle,2010'Q1,1323.0,public,EU,Europe,DY,36.0,8.0
+Finnair,2010'Q1,2683.0,public,EU,Europe,AY,-12.0,0.0
 Singapore Airlines,2010'Q1,9672.0,public,SG,Asia Pacific,SQ,-4.0,17.0
 Qantas Airways,2010'Q1,11790.0,public,AU,Asia Pacific,QF,-18.0,11.0
 Japan Airlines,2010'Q1,11000.0,public,JP,Asia Pacific,JL,-26.0,24.0
@@ -1444,6 +1516,7 @@ Southwest Airlines,2010'Q2,11227.0,public,US,North America,WN,5.0,11.0
 United Airlines,2010'Q2,19830.0,public,US,North America,UA,12.0,9.0
 Alaska Air,2010'Q2,3616.0,public,US,North America,AS,3.0,17.0
 JetBlue,2010'Q2,3536.0,public,US,North America,B6,6.0,15.0
+Spirit Airlines,2010'Q2,741.0,public,US,North America,NK,0.0,12.0
 Allegiant,2010'Q2,611.0,public,US,North America,G4,15.0,24.0
 Hawaiian,2010'Q2,1247.0,public,US,North America,HA,4.0,13.0
 SkyWest,2010'Q2,2689.0,public,US,North America,OO,-10.0,16.0
@@ -1474,6 +1547,7 @@ Kenya Airlines,2010'Q2,1014.0,public,KE,Africa,KQ,8.0,12.0
 Comair,2010'Q2,395.0,public,ZA,Africa,MN,7.0,8.0
 Emirates,2010'Q2,13997.0,private,AE,Middle East,EK,13.0,23.0
 Aeroflot,2010'Q2,3872.0,"taken private 2023, war",RU,Russia,SU,2.0,15.0
+Air Arabia,2010'Q2,559.0,public,AE,Middle East,G9,0.0,13.0
 Jazeera Airways,2010'Q2,163.0,public,KW,Middle East,J9,-8.0,3.0
 American Airlines,2010'Q3,21607.0,public,US,North America,AA,4.0,5.0
 Delta Air Lines,2010'Q3,30832.0,public,US,North America,DL,16.0,11.0
@@ -1735,6 +1809,7 @@ Korean Air,2012'Q1,10856.0,public,KR,Asia Pacific,KE,4.0,3.0
 Asiana Airlines,2012'Q1,5028.0,public,KR,Asia Pacific,OZ,5.0,6.0
 Cathay Pacific,2012'Q1,12710.0,public,HK,Asia Pacific,CX,5.0,11.0
 Copa Holdings,2012'Q1,1936.0,public,PA,Latin America,CM,28.0,24.0
+Gol Linhas Aereas,2012'Q1,4076.0,public,BR,Latin America,G3,-1.0,0.0
 Air China,2012'Q1,15700.0,public,CN,China,CA,18.0,19.0
 China Eastern,2012'Q1,13353.0,public,CN,China,MU,13.0,13.0
 China Southern,2012'Q1,14880.0,public,CN,China,CZ,20.0,14.0
@@ -1805,6 +1880,7 @@ IAG,2012'Q3,23137.0,public,EU,Europe,IAG,12.0,7.0
 Air France-KLM,2012'Q3,33300.0,public,EU,Europe,AF/KL,1.0,8.0
 Ryanair,2012'Q3,6156.0,public,EU,Europe,FR,8.0,22.0
 easyJet,2012'Q3,6026.0,public,EU,Europe,U2,15.0,11.0
+Deutsche Lufthansa,2012'Q3,39075.0,public,EU,Europe,LH,0.0,10.0
 Norwegian Air Shuttle,2012'Q3,2184.0,public,EU,Europe,DY,26.0,8.0
 Finnair,2012'Q3,3179.0,public,EU,Europe,AY,10.0,5.0
 Wizz Air,2012'Q3,1073.0,public,EU,Europe,W6,7.0,7.0
@@ -1831,6 +1907,7 @@ Jazeera Airways,2012'Q3,221.0,public,KW,Middle East,J9,14.0,39.0
 American Airlines,2012'Q4,24855.0,public,US,North America,AA,4.0,6.0
 Delta Air Lines,2012'Q4,36670.0,public,US,North America,DL,4.0,11.0
 Southwest Airlines,2012'Q4,17088.0,public,US,North America,WN,9.0,10.0
+United Airlines,2012'Q4,37152.0,public,US,North America,UA,0.0,8.0
 Alaska Air,2012'Q4,4657.0,public,US,North America,AS,8.0,18.0
 JetBlue,2012'Q4,4982.0,public,US,North America,B6,11.0,13.0
 Spirit Airlines,2012'Q4,1318.0,public,US,North America,NK,23.0,13.0
@@ -1849,6 +1926,7 @@ Norwegian Air Shuttle,2012'Q4,2309.0,public,EU,Europe,DY,28.0,9.0
 Finnair,2012'Q4,3259.0,public,EU,Europe,AY,11.0,6.0
 Wizz Air,2012'Q4,1090.0,public,EU,Europe,W6,7.0,7.0
 Singapore Airlines,2012'Q4,12141.0,public,SG,Asia Pacific,SQ,3.0,13.0
+Qantas Airways,2012'Q4,16024.0,public,AU,Asia Pacific,QF,0.0,9.0
 ANA Holdings,2012'Q4,15758.0,public,JP,Asia Pacific,NH,-8.0,15.0
 Korean Air,2012'Q4,11528.0,public,KR,Asia Pacific,KE,8.0,2.0
 Asiana Airlines,2012'Q4,5500.0,public,KR,Asia Pacific,OZ,13.0,3.0
@@ -1924,8 +2002,10 @@ Air Canada,2013'Q2,11905.0,public,CA,North America,AC,1.0,9.0
 WestJet Airlines,2013'Q2,3443.0,public,CA,North America,WS,7.0,16.0
 Exchange Income Corporation,2013'Q2,886.0,public,CA,North America,,41.0,10.0
 IAG,2013'Q2,24756.0,public,EU,Europe,IAG,11.0,8.0
+Air France-KLM,2013'Q2,33500.0,public,EU,Europe,AF/KL,0.0,9.0
 Ryanair,2013'Q2,6599.0,public,EU,Europe,FR,9.0,21.0
 easyJet,2013'Q2,6559.0,public,EU,Europe,U2,13.0,13.0
+Deutsche Lufthansa,2013'Q2,39350.0,public,EU,Europe,LH,0.0,10.0
 Norwegian Air Shuttle,2013'Q2,2477.0,public,EU,Europe,DY,21.0,9.0
 Finnair,2013'Q2,3298.0,public,EU,Europe,AY,7.0,6.0
 Wizz Air,2013'Q2,1243.0,public,EU,Europe,W6,17.0,10.0
@@ -1945,6 +2025,7 @@ Hainan Airlines,2013'Q2,4903.0,public,CN,China,HU,15.0,21.0
 Spring Airlines,2013'Q2,983.0,public,CN,China,9C,25.0,12.0
 Juneyao Airlines,2013'Q2,838.0,public,CN,China,HO,38.0,11.0
 SpiceJet,2013'Q2,1056.0,public,IN,India,SG,18.0,-5.0
+Kenya Airlines,2013'Q2,1190.0,public,KE,Africa,KQ,-2.0,0.0
 Comair,2013'Q2,521.0,public,ZA,Africa,MN,1.0,8.0
 Emirates,2013'Q2,22482.0,private,AE,Middle East,EK,15.0,19.0
 Aeroflot,2013'Q2,8525.0,"taken private 2023, war",RU,Russia,SU,28.0,9.0
@@ -1971,9 +2052,11 @@ Deutsche Lufthansa,2013'Q3,39625.0,public,EU,Europe,LH,1.0,10.0
 Norwegian Air Shuttle,2013'Q3,2561.0,public,EU,Europe,DY,18.0,9.0
 Finnair,2013'Q3,3317.0,public,EU,Europe,AY,4.0,6.0
 Wizz Air,2013'Q3,1319.0,public,EU,Europe,W6,23.0,12.0
+Singapore Airlines,2013'Q3,12105.0,public,SG,Asia Pacific,SQ,0.0,13.0
 Qantas Airways,2013'Q3,15061.0,public,AU,Asia Pacific,QF,-6.0,11.0
 Japan Airlines,2013'Q3,12838.0,public,JP,Asia Pacific,JL,-3.0,20.0
 ANA Holdings,2013'Q3,15614.0,public,JP,Asia Pacific,NH,-3.0,13.0
+Korean Air,2013'Q3,11302.0,public,KR,Asia Pacific,KE,0.0,1.0
 Asiana Airlines,2013'Q3,5442.0,public,KR,Asia Pacific,OZ,2.0,1.0
 Cathay Pacific,2013'Q3,12925.0,public,HK,Asia Pacific,CX,1.0,11.0
 Copa Holdings,2013'Q3,2519.0,public,PA,Latin America,CM,18.0,24.0
@@ -2002,6 +2085,7 @@ Allegiant,2013'Q4,996.0,public,US,North America,G4,10.0,22.0
 Hawaiian,2013'Q4,2156.0,public,US,North America,HA,10.0,10.0
 SkyWest,2013'Q4,3298.0,public,US,North America,OO,-7.0,12.0
 Air Canada,2013'Q4,11637.0,public,CA,North America,AC,-4.0,10.0
+WestJet Airlines,2013'Q4,3442.0,public,CA,North America,WS,0.0,16.0
 Exchange Income Corporation,2013'Q4,968.0,public,CA,North America,,20.0,8.0
 IAG,2013'Q4,25609.0,public,EU,Europe,IAG,7.0,10.0
 Air France-KLM,2013'Q4,33900.0,public,EU,Europe,AF/KL,2.0,10.0
@@ -2011,12 +2095,16 @@ Deutsche Lufthansa,2013'Q4,39900.0,public,EU,Europe,LH,3.0,10.0
 Norwegian Air Shuttle,2013'Q4,2645.0,public,EU,Europe,DY,15.0,9.0
 Finnair,2013'Q4,3336.0,public,EU,Europe,AY,2.0,6.0
 Wizz Air,2013'Q4,1395.0,public,EU,Europe,W6,28.0,13.0
+Singapore Airlines,2013'Q4,12094.0,public,SG,Asia Pacific,SQ,0.0,13.0
 Qantas Airways,2013'Q4,14740.0,public,AU,Asia Pacific,QF,-8.0,11.0
 Japan Airlines,2013'Q4,12731.0,public,JP,Asia Pacific,JL,-3.0,19.0
 ANA Holdings,2013'Q4,15566.0,public,JP,Asia Pacific,NH,-1.0,13.0
+Korean Air,2013'Q4,11227.0,public,KR,Asia Pacific,KE,-3.0,0.0
+Asiana Airlines,2013'Q4,5423.0,public,KR,Asia Pacific,OZ,-1.0,0.0
 Cathay Pacific,2013'Q4,12960.0,public,HK,Asia Pacific,CX,1.0,11.0
 Copa Holdings,2013'Q4,2608.0,public,PA,Latin America,CM,16.0,25.0
 Gol Linhas Aereas,2013'Q4,3855.0,public,BR,Latin America,G3,-3.0,9.0
+Air China,2013'Q4,16089.0,public,CN,China,CA,0.0,15.0
 China Eastern,2013'Q4,14388.0,public,CN,China,MU,6.0,8.0
 China Southern,2013'Q4,16369.0,public,CN,China,CZ,2.0,11.0
 Hainan Airlines,2013'Q4,5355.0,public,CN,China,HU,20.0,20.0
@@ -2040,6 +2128,7 @@ Allegiant,2014'Q1,1031.0,public,US,North America,G4,11.0,23.0
 Hawaiian,2014'Q1,2196.0,public,US,North America,HA,9.0,11.0
 SkyWest,2014'Q1,3283.0,public,US,North America,OO,-5.0,12.0
 Air Canada,2014'Q1,11589.0,public,CA,North America,AC,-4.0,10.0
+WestJet Airlines,2014'Q1,3439.0,public,CA,North America,WS,0.0,17.0
 Exchange Income Corporation,2014'Q1,843.0,public,CA,North America,,2.0,10.0
 IAG,2014'Q1,25328.0,public,EU,Europe,IAG,4.0,11.0
 Air France-KLM,2014'Q1,33725.0,public,EU,Europe,AF/KL,1.0,10.0
@@ -2054,6 +2143,7 @@ Qantas Airways,2014'Q1,14670.0,public,AU,Asia Pacific,QF,-6.0,9.0
 Japan Airlines,2014'Q1,12347.0,public,JP,Asia Pacific,JL,-5.0,19.0
 ANA Holdings,2014'Q1,15241.0,public,JP,Asia Pacific,NH,-3.0,13.0
 Korean Air,2014'Q1,11129.0,public,KR,Asia Pacific,KE,-3.0,1.0
+Asiana Airlines,2014'Q1,5395.0,public,KR,Asia Pacific,OZ,-2.0,0.0
 Cathay Pacific,2014'Q1,13137.0,public,HK,Asia Pacific,CX,2.0,12.0
 Copa Holdings,2014'Q1,2638.0,public,PA,Latin America,CM,13.0,25.0
 Gol Linhas Aereas,2014'Q1,3845.0,public,BR,Latin America,G3,-2.0,9.0
@@ -2081,8 +2171,10 @@ Allegiant,2014'Q2,1067.0,public,US,North America,G4,12.0,24.0
 Hawaiian,2014'Q2,2235.0,public,US,North America,HA,9.0,12.0
 SkyWest,2014'Q2,3268.0,public,US,North America,OO,-4.0,12.0
 Air Canada,2014'Q2,11540.0,public,CA,North America,AC,-3.0,10.0
+WestJet Airlines,2014'Q2,3435.0,public,CA,North America,WS,0.0,17.0
 Exchange Income Corporation,2014'Q2,718.0,public,CA,North America,,-16.0,13.0
 IAG,2014'Q2,25048.0,public,EU,Europe,IAG,1.0,11.0
+Air France-KLM,2014'Q2,33550.0,public,EU,Europe,AF/KL,0.0,10.0
 Ryanair,2014'Q2,6514.0,public,EU,Europe,FR,-1.0,23.0
 easyJet,2014'Q2,7101.0,public,EU,Europe,U2,8.0,15.0
 Deutsche Lufthansa,2014'Q2,39900.0,public,EU,Europe,LH,1.0,10.0
@@ -2122,6 +2214,7 @@ Allegiant,2014'Q3,1102.0,public,US,North America,G4,13.0,24.0
 Hawaiian,2014'Q3,2275.0,public,US,North America,HA,8.0,14.0
 SkyWest,2014'Q3,3253.0,public,US,North America,OO,-3.0,11.0
 Air Canada,2014'Q3,11491.0,public,CA,North America,AC,-2.0,10.0
+WestJet Airlines,2014'Q3,3432.0,public,CA,North America,WS,0.0,17.0
 Exchange Income Corporation,2014'Q3,593.0,public,CA,North America,,-30.0,15.0
 IAG,2014'Q3,24768.0,public,EU,Europe,IAG,-1.0,12.0
 Air France-KLM,2014'Q3,33375.0,public,EU,Europe,AF/KL,-1.0,10.0
@@ -2147,6 +2240,7 @@ Hainan Airlines,2014'Q3,5748.0,public,CN,China,HU,12.0,23.0
 Spring Airlines,2014'Q3,1165.0,public,CN,China,9C,14.0,14.0
 Juneyao Airlines,2014'Q3,1056.0,public,CN,China,HO,18.0,12.0
 SpiceJet,2014'Q3,897.0,public,IN,India,SG,-15.0,-9.0
+Kenya Airlines,2014'Q3,1201.0,public,KE,Africa,KQ,0.0,2.0
 Comair,2014'Q3,578.0,public,ZA,Africa,MN,10.0,11.0
 Emirates,2014'Q3,25645.0,private,AE,Middle East,EK,11.0,21.0
 Aeroflot,2014'Q3,6497.0,"taken private 2023, war",RU,Russia,SU,-25.0,9.0
@@ -2163,11 +2257,14 @@ Allegiant,2014'Q4,1137.0,public,US,North America,G4,14.0,25.0
 Hawaiian,2014'Q4,2315.0,public,US,North America,HA,7.0,15.0
 SkyWest,2014'Q4,3237.0,public,US,North America,OO,-2.0,11.0
 Air Canada,2014'Q4,11442.0,public,CA,North America,AC,-2.0,10.0
+WestJet Airlines,2014'Q4,3428.0,public,CA,North America,WS,0.0,18.0
 Exchange Income Corporation,2014'Q4,468.0,public,CA,North America,,-30.0,17.0
 IAG,2014'Q4,24488.0,public,EU,Europe,IAG,-4.0,13.0
 Air France-KLM,2014'Q4,33200.0,public,EU,Europe,AF/KL,-2.0,9.0
 Ryanair,2014'Q4,6083.0,public,EU,Europe,FR,-12.0,25.0
 easyJet,2014'Q4,7325.0,public,EU,Europe,U2,6.0,15.0
+Deutsche Lufthansa,2014'Q4,39900.0,public,EU,Europe,LH,0.0,11.0
+Norwegian Air Shuttle,2014'Q4,2630.0,public,EU,Europe,DY,-1.0,0.0
 Finnair,2014'Q4,2796.0,public,EU,Europe,AY,-16.0,4.0
 Wizz Air,2014'Q4,1320.0,public,EU,Europe,W6,-5.0,16.0
 Singapore Airlines,2014'Q4,11308.0,public,SG,Asia Pacific,SQ,-6.0,16.0
@@ -2297,8 +2394,10 @@ SkyWest,2015'Q3,3131.0,public,US,North America,OO,-4.0,15.0
 Air Canada,2015'Q3,10405.0,public,CA,North America,AC,-9.0,14.0
 WestJet Airlines,2015'Q3,3041.0,public,CA,North America,WS,-11.0,20.0
 Exchange Income Corporation,2015'Q3,554.0,public,CA,North America,,6.0,21.0
+IAG,2015'Q3,24786.0,public,EU,Europe,IAG,0.0,12.0
 Air France-KLM,2015'Q3,29900.0,public,EU,Europe,AF/KL,-10.0,9.0
 Ryanair,2015'Q3,7102.0,public,EU,Europe,FR,14.0,28.0
+easyJet,2015'Q3,7173.0,public,EU,Europe,U2,0.0,17.0
 Deutsche Lufthansa,2015'Q3,36675.0,public,EU,Europe,LH,-8.0,13.0
 Norwegian Air Shuttle,2015'Q3,2572.0,public,EU,Europe,DY,-2.0,6.0
 Finnair,2015'Q3,2709.0,public,EU,Europe,AY,-7.0,7.0
@@ -2313,6 +2412,7 @@ Cathay Pacific,2015'Q3,13320.0,public,HK,Asia Pacific,CX,-1.0,15.0
 Copa Holdings,2015'Q3,2374.0,public,PA,Latin America,CM,-12.0,19.0
 Gol Linhas Aereas,2015'Q3,2836.0,public,BR,Latin America,G3,-26.0,4.0
 LATAM Airlines,2015'Q3,10712.0,public,CL,Latin America,LA,-16.0,13.0
+Air China,2015'Q3,17045.0,public,CN,China,CA,0.0,24.0
 China Eastern,2015'Q3,15247.0,public,CN,China,MU,1.0,21.0
 China Southern,2015'Q3,17365.0,public,CN,China,CZ,-1.0,18.0
 Hainan Airlines,2015'Q3,5527.0,public,CN,China,HU,-4.0,28.0
@@ -2322,6 +2422,7 @@ Indigo,2015'Q3,2388.0,public,IN,India,6E,10.0,18.0
 SpiceJet,2015'Q3,787.0,public,IN,India,SG,-12.0,10.0
 Kenya Airlines,2015'Q3,1158.0,public,KE,Africa,KQ,-4.0,6.0
 Comair,2015'Q3,510.0,public,ZA,Africa,MN,-11.0,13.0
+Emirates,2015'Q3,25509.0,private,AE,Middle East,EK,0.0,25.0
 Qatar Airways,2015'Q3,9573.0,private,QA,Middle East,QR,4.0,23.0
 Aeroflot,2015'Q3,5838.0,"taken private 2023, war",RU,Russia,SU,-6.0,14.0
 Air Arabia,2015'Q3,1050.0,public,AE,Middle East,G9,5.0,25.0
@@ -2334,6 +2435,7 @@ Alaska Air,2015'Q4,5598.0,public,US,North America,AS,4.0,30.0
 JetBlue,2015'Q4,6416.0,public,US,North America,B6,10.0,22.0
 Spirit Airlines,2015'Q4,2141.0,public,US,North America,NK,11.0,28.0
 Allegiant,2015'Q4,1262.0,public,US,North America,G4,11.0,37.0
+Hawaiian,2015'Q4,2317.0,public,US,North America,HA,0.0,23.0
 SkyWest,2015'Q4,3096.0,public,US,North America,OO,-4.0,16.0
 Air Canada,2015'Q4,10059.0,public,CA,North America,AC,-12.0,15.0
 WestJet Airlines,2015'Q4,2911.0,public,CA,North America,WS,-15.0,21.0
@@ -2346,6 +2448,7 @@ Deutsche Lufthansa,2015'Q4,35600.0,public,EU,Europe,LH,-11.0,13.0
 Norwegian Air Shuttle,2015'Q4,2553.0,public,EU,Europe,DY,-3.0,9.0
 Finnair,2015'Q4,2680.0,public,EU,Europe,AY,-4.0,8.0
 Wizz Air,2015'Q4,1627.0,public,EU,Europe,W6,23.0,18.0
+Singapore Airlines,2015'Q4,11271.0,public,SG,Asia Pacific,SQ,0.0,17.0
 Qantas Airways,2015'Q4,12147.0,public,AU,Asia Pacific,QF,-16.0,14.0
 Japan Airlines,2015'Q4,11868.0,public,JP,Asia Pacific,JL,6.0,22.0
 ANA Holdings,2015'Q4,15903.0,public,JP,Asia Pacific,NH,11.0,16.0
@@ -2371,6 +2474,7 @@ Aeroflot,2015'Q4,5886.0,"taken private 2023, war",RU,Russia,SU,3.0,16.0
 Air Arabia,2015'Q4,1053.0,public,AE,Middle East,G9,1.0,26.0
 Jazeera Airways,2015'Q4,209.0,public,KW,Middle East,J9,-13.0,29.0
 American Airlines,2016'Q1,40778.0,public,US,North America,AA,-3.0,21.0
+Delta Air Lines,2016'Q1,40391.0,public,US,North America,DL,0.0,26.0
 Southwest Airlines,2016'Q1,19937.0,public,US,North America,WN,5.0,25.0
 United Airlines,2016'Q1,37538.0,public,US,North America,UA,-3.0,19.0
 Alaska Air,2016'Q1,5680.0,public,US,North America,AS,5.0,30.0
@@ -2382,6 +2486,7 @@ SkyWest,2016'Q1,3088.0,public,US,North America,OO,-4.0,17.0
 Air Canada,2016'Q1,10278.0,public,CA,North America,AC,-7.0,15.0
 WestJet Airlines,2016'Q1,2951.0,public,CA,North America,WS,-10.0,20.0
 Exchange Income Corporation,2016'Q1,603.0,public,CA,North America,,22.0,23.0
+IAG,2016'Q1,24611.0,public,EU,Europe,IAG,0.0,13.0
 Air France-KLM,2016'Q1,28500.0,public,EU,Europe,AF/KL,-11.0,9.0
 Ryanair,2016'Q1,7358.0,public,EU,Europe,FR,16.0,29.0
 easyJet,2016'Q1,6855.0,public,EU,Europe,U2,-6.0,17.0
@@ -2406,6 +2511,7 @@ Hainan Airlines,2016'Q1,5517.0,public,CN,China,HU,-4.0,29.0
 Spring Airlines,2016'Q1,1235.0,public,CN,China,9C,2.0,17.0
 Juneyao Airlines,2016'Q1,1297.0,public,CN,China,HO,15.0,20.0
 Indigo,2016'Q1,2548.0,public,IN,India,6E,12.0,18.0
+SpiceJet,2016'Q1,816.0,public,IN,India,SG,0.0,14.0
 Kenya Airlines,2016'Q1,1118.0,public,KE,Africa,KQ,-5.0,8.0
 Comair,2016'Q1,464.0,public,ZA,Africa,MN,-18.0,13.0
 Emirates,2016'Q1,25389.0,private,AE,Middle East,EK,-2.0,25.0
@@ -2447,6 +2553,7 @@ LATAM Airlines,2016'Q2,9826.0,public,CL,Latin America,LA,-12.0,13.0
 Air China,2016'Q2,16761.0,public,CN,China,CA,-2.0,27.0
 China Eastern,2016'Q2,15098.0,public,CN,China,MU,-1.0,23.0
 China Southern,2016'Q2,16847.0,public,CN,China,CZ,-4.0,19.0
+Hainan Airlines,2016'Q2,5623.0,public,CN,China,HU,0.0,28.0
 Spring Airlines,2016'Q2,1228.0,public,CN,China,9C,1.0,14.0
 Juneyao Airlines,2016'Q2,1340.0,public,CN,China,HO,15.0,20.0
 Indigo,2016'Q2,2654.0,public,IN,India,6E,13.0,16.0
@@ -2456,6 +2563,7 @@ Comair,2016'Q2,446.0,public,ZA,Africa,MN,-17.0,14.0
 Emirates,2016'Q2,25511.0,private,AE,Middle East,EK,-1.0,24.0
 Qatar Airways,2016'Q2,10143.0,private,QA,Middle East,QR,7.0,22.0
 Aeroflot,2016'Q2,7111.0,"taken private 2023, war",RU,Russia,SU,22.0,17.0
+Air Arabia,2016'Q2,1048.0,public,AE,Middle East,G9,0.0,24.0
 Jazeera Airways,2016'Q2,193.0,public,KW,Middle East,J9,-14.0,25.0
 American Airlines,2016'Q3,40354.0,public,US,North America,AA,-3.0,20.0
 Delta Air Lines,2016'Q3,39764.0,public,US,North America,DL,-2.0,24.0
@@ -2468,6 +2576,7 @@ Allegiant,2016'Q3,1350.0,public,US,North America,G4,10.0,35.0
 Hawaiian,2016'Q3,2404.0,public,US,North America,HA,4.0,25.0
 SkyWest,2016'Q3,3072.0,public,US,North America,OO,-2.0,18.0
 Air Canada,2016'Q3,10715.0,public,CA,North America,AC,3.0,15.0
+WestJet Airlines,2016'Q3,3031.0,public,CA,North America,WS,0.0,20.0
 Exchange Income Corporation,2016'Q3,644.0,public,CA,North America,,16.0,23.0
 IAG,2016'Q3,24062.0,public,EU,Europe,IAG,-3.0,14.0
 Air France-KLM,2016'Q3,27900.0,public,EU,Europe,AF/KL,-6.0,9.0
@@ -2500,6 +2609,7 @@ Comair,2016'Q3,428.0,public,ZA,Africa,MN,-16.0,14.0
 Emirates,2016'Q3,25633.0,private,AE,Middle East,EK,1.0,23.0
 Qatar Airways,2016'Q3,10378.0,private,QA,Middle East,QR,8.0,20.0
 Aeroflot,2016'Q3,7724.0,"taken private 2023, war",RU,Russia,SU,32.0,17.0
+Air Arabia,2016'Q3,1045.0,public,AE,Middle East,G9,0.0,23.0
 Jazeera Airways,2016'Q3,186.0,public,KW,Middle East,J9,-14.0,23.0
 American Airlines,2016'Q4,40142.0,public,US,North America,AA,-2.0,19.0
 Delta Air Lines,2016'Q4,39450.0,public,US,North America,DL,-3.0,24.0
@@ -2546,6 +2656,7 @@ Qatar Airways,2016'Q4,10613.0,private,QA,Middle East,QR,10.0,19.0
 Aeroflot,2016'Q4,8337.0,"taken private 2023, war",RU,Russia,SU,42.0,17.0
 Air Arabia,2016'Q4,1042.0,public,AE,Middle East,G9,-1.0,23.0
 Jazeera Airways,2016'Q4,178.0,public,KW,Middle East,J9,-15.0,20.0
+American Airlines,2017'Q1,40762.0,public,US,North America,AA,0.0,19.0
 Delta Air Lines,2017'Q1,39872.0,public,US,North America,DL,-1.0,23.0
 Southwest Airlines,2017'Q1,20503.0,public,US,North America,WN,3.0,23.0
 United Airlines,2017'Q1,36865.0,public,US,North America,UA,-2.0,18.0
@@ -2554,6 +2665,7 @@ JetBlue,2017'Q1,6691.0,public,US,North America,B6,4.0,24.0
 Spirit Airlines,2017'Q1,2401.0,public,US,North America,NK,10.0,24.0
 Allegiant,2017'Q1,1412.0,public,US,North America,G4,9.0,32.0
 Hawaiian,2017'Q1,2493.0,public,US,North America,HA,6.0,25.0
+SkyWest,2017'Q1,3078.0,public,US,North America,OO,0.0,20.0
 Air Canada,2017'Q1,11428.0,public,CA,North America,AC,11.0,15.0
 WestJet Airlines,2017'Q1,3198.0,public,CA,North America,WS,8.0,19.0
 Exchange Income Corporation,2017'Q1,699.0,public,CA,North America,,16.0,24.0
@@ -2566,6 +2678,7 @@ Norwegian Air Shuttle,2017'Q1,3209.0,public,EU,Europe,DY,20.0,7.0
 Finnair,2017'Q1,2684.0,public,EU,Europe,AY,2.0,8.0
 Wizz Air,2017'Q1,1860.0,public,EU,Europe,W6,13.0,19.0
 Singapore Airlines,2017'Q1,10990.0,public,SG,Asia Pacific,SQ,-1.0,18.0
+Qantas Airways,2017'Q1,12114.0,public,AU,Asia Pacific,QF,0.0,17.0
 Japan Airlines,2017'Q1,11884.0,public,JP,Asia Pacific,JL,1.0,21.0
 ANA Holdings,2017'Q1,16458.0,public,JP,Asia Pacific,NH,4.0,16.0
 Korean Air,2017'Q1,10110.0,public,KR,Asia Pacific,KE,3.0,10.0
@@ -2592,11 +2705,13 @@ Jazeera Airways,2017'Q1,181.0,public,KW,Middle East,J9,-9.0,19.0
 American Airlines,2017'Q2,41382.0,public,US,North America,AA,2.0,18.0
 Delta Air Lines,2017'Q2,40294.0,public,US,North America,DL,1.0,22.0
 Southwest Airlines,2017'Q2,20718.0,public,US,North America,WN,3.0,23.0
+United Airlines,2017'Q2,37171.0,public,US,North America,UA,0.0,17.0
 Alaska Air,2017'Q2,6910.0,public,US,North America,AS,20.0,26.0
 JetBlue,2017'Q2,6798.0,public,US,North America,B6,5.0,22.0
 Spirit Airlines,2017'Q2,2482.0,public,US,North America,NK,11.0,23.0
 Allegiant,2017'Q2,1445.0,public,US,North America,G4,9.0,30.0
 Hawaiian,2017'Q2,2554.0,public,US,North America,HA,7.0,24.0
+SkyWest,2017'Q2,3093.0,public,US,North America,OO,0.0,20.0
 Air Canada,2017'Q2,11922.0,public,CA,North America,AC,13.0,15.0
 WestJet Airlines,2017'Q2,3325.0,public,CA,North America,WS,11.0,19.0
 Exchange Income Corporation,2017'Q2,734.0,public,CA,North America,,18.0,24.0
@@ -2617,6 +2732,7 @@ Asiana Airlines,2017'Q2,5466.0,public,KR,Asia Pacific,OZ,15.0,4.0
 Cathay Pacific,2017'Q2,12206.0,public,HK,Asia Pacific,CX,-3.0,8.0
 Copa Holdings,2017'Q2,2372.0,public,PA,Latin America,CM,6.0,22.0
 Gol Linhas Aereas,2017'Q2,3149.0,public,BR,Latin America,G3,13.0,13.0
+LATAM Airlines,2017'Q2,9845.0,public,CL,Latin America,LA,0.0,15.0
 Air China,2017'Q2,17808.0,public,CN,China,CA,6.0,24.0
 China Eastern,2017'Q2,15924.0,public,CN,China,MU,6.0,23.0
 China Southern,2017'Q2,18359.0,public,CN,China,CZ,9.0,18.0
@@ -2767,6 +2883,7 @@ Jet Airways,2018'Q1,2511.0,public,IN,India,9W,-30.0,-50.0
 Kenya Airlines,2018'Q1,869.0,public,KE,Africa,KQ,-7.0,11.0
 Comair,2018'Q1,467.0,public,ZA,Africa,MN,11.0,17.0
 Emirates,2018'Q1,28321.0,private,AE,Middle East,EK,8.0,24.0
+Qatar Airways,2018'Q1,11989.0,private,QA,Middle East,QR,10.0,0.0
 Aeroflot,2018'Q1,9320.0,"taken private 2023, war",RU,Russia,SU,9.0,15.0
 Turkish Airlines,2018'Q1,11368.0,public,TR,Turkey,TK,17.0,12.0
 Air Arabia,2018'Q1,1057.0,public,AE,Middle East,G9,2.0,27.0
@@ -2848,6 +2965,7 @@ Korean Air,2018'Q3,11552.0,public,KR,Asia Pacific,KE,6.0,6.0
 Asiana Airlines,2018'Q3,6359.0,public,KR,Asia Pacific,OZ,10.0,1.0
 Cathay Pacific,2018'Q3,13745.0,public,HK,Asia Pacific,CX,11.0,11.0
 Copa Holdings,2018'Q3,2639.0,public,PA,Latin America,CM,8.0,20.0
+Gol Linhas Aereas,2018'Q3,3186.0,public,BR,Latin America,G3,0.0,16.0
 LATAM Airlines,2018'Q3,10357.0,public,CL,Latin America,LA,4.0,15.0
 Air China,2018'Q3,20177.0,public,CN,China,CA,10.0,20.0
 China Eastern,2018'Q3,17520.0,public,CN,China,MU,7.0,20.0
@@ -2862,6 +2980,7 @@ Kenya Airlines,2018'Q3,1040.0,public,KE,Africa,KQ,27.0,10.0
 Comair,2018'Q3,472.0,public,ZA,Africa,MN,5.0,17.0
 Emirates,2018'Q3,29252.0,private,AE,Middle East,EK,7.0,23.0
 Qatar Airways,2018'Q3,12791.0,private,QA,Middle East,QR,13.0,-5.0
+Aeroflot,2018'Q3,9098.0,"taken private 2023, war",RU,Russia,SU,0.0,22.0
 Turkish Airlines,2018'Q3,12317.0,public,TR,Turkey,TK,17.0,11.0
 Air Arabia,2018'Q3,1110.0,public,AE,Middle East,G9,7.0,25.0
 Jazeera Airways,2018'Q3,252.0,public,KW,Middle East,J9,35.0,12.0
@@ -2886,8 +3005,10 @@ Deutsche Lufthansa,2018'Q4,42300.0,public,EU,Europe,LH,5.0,14.0
 Norwegian Air Shuttle,2018'Q4,4634.0,public,EU,Europe,DY,23.0,-3.0
 Finnair,2018'Q4,3330.0,public,EU,Europe,AY,5.0,11.0
 Wizz Air,2018'Q4,2614.0,public,EU,Europe,W6,9.0,30.0
+Singapore Airlines,2018'Q4,12039.0,public,SG,Asia Pacific,SQ,0.0,18.0
 Qantas Airways,2018'Q4,12659.0,public,AU,Asia Pacific,QF,2.0,18.0
 Japan Airlines,2018'Q4,13408.0,public,JP,Asia Pacific,JL,3.0,20.0
+ANA Holdings,2018'Q4,18557.0,public,JP,Asia Pacific,NH,0.0,16.0
 Korean Air,2018'Q4,11637.0,public,KR,Asia Pacific,KE,3.0,5.0
 Asiana Airlines,2018'Q4,6425.0,public,KR,Asia Pacific,OZ,4.0,1.0
 Cathay Pacific,2018'Q4,14177.0,public,HK,Asia Pacific,CX,14.0,12.0
@@ -2920,6 +3041,7 @@ JetBlue,2019'Q1,7767.0,public,US,North America,B6,8.0,16.0
 Spirit Airlines,2019'Q1,3450.0,public,US,North America,NK,23.0,18.0
 Allegiant,2019'Q1,1711.0,public,US,North America,G4,10.0,24.0
 Hawaiian,2019'Q1,2836.0,public,US,North America,HA,5.0,17.0
+SkyWest,2019'Q1,3159.0,public,US,North America,OO,0.0,26.0
 Air Canada,2019'Q1,13561.0,public,CA,North America,AC,4.0,18.0
 WestJet Airlines,2019'Q1,2603.0,public,CA,North America,WS,-3.0,12.0
 Exchange Income Corporation,2019'Q1,918.0,public,CA,North America,,11.0,23.0
@@ -2935,6 +3057,7 @@ Singapore Airlines,2019'Q1,11832.0,public,SG,Asia Pacific,SQ,-2.0,18.0
 Qantas Airways,2019'Q1,12601.0,public,AU,Asia Pacific,QF,1.0,18.0
 Japan Airlines,2019'Q1,13264.0,public,JP,Asia Pacific,JL,1.0,20.0
 ANA Holdings,2019'Q1,18458.0,public,JP,Asia Pacific,NH,-1.0,15.0
+Korean Air,2019'Q1,11402.0,public,KR,Asia Pacific,KE,0.0,5.0
 Asiana Airlines,2019'Q1,6306.0,public,KR,Asia Pacific,OZ,1.0,-1.0
 Cathay Pacific,2019'Q1,14067.0,public,HK,Asia Pacific,CX,10.0,13.0
 Copa Holdings,2019'Q1,2685.0,public,PA,Latin America,CM,5.0,21.0
@@ -2979,6 +3102,7 @@ Norwegian Air Shuttle,2019'Q2,4795.0,public,EU,Europe,DY,15.0,6.0
 Finnair,2019'Q2,3437.0,public,EU,Europe,AY,6.0,13.0
 Wizz Air,2019'Q2,2820.0,public,EU,Europe,W6,12.0,28.0
 Singapore Airlines,2019'Q2,11626.0,public,SG,Asia Pacific,SQ,-3.0,18.0
+Qantas Airways,2019'Q2,12542.0,public,AU,Asia Pacific,QF,0.0,18.0
 Japan Airlines,2019'Q2,13121.0,public,JP,Asia Pacific,JL,-1.0,19.0
 ANA Holdings,2019'Q2,18360.0,public,JP,Asia Pacific,NH,-1.0,14.0
 Korean Air,2019'Q2,11167.0,public,KR,Asia Pacific,KE,-3.0,4.0
@@ -3018,6 +3142,7 @@ Air Canada,2019'Q3,14287.0,public,CA,North America,AC,9.0,19.0
 WestJet Airlines,2019'Q3,868.0,public,CA,North America,WS,-3.0,12.0
 Exchange Income Corporation,2019'Q3,991.0,public,CA,North America,,15.0,24.0
 IAG,2019'Q3,28476.0,public,EU,Europe,IAG,2.0,13.0
+Air France-KLM,2019'Q3,30625.0,public,EU,Europe,AF/KL,0.0,12.0
 Ryanair,2019'Q3,9142.0,public,EU,Europe,FR,5.0,22.0
 easyJet,2019'Q3,7845.0,public,EU,Europe,U2,5.0,14.0
 Deutsche Lufthansa,2019'Q3,41175.0,public,EU,Europe,LH,-1.0,12.0
@@ -3034,6 +3159,7 @@ Cathay Pacific,2019'Q3,13847.0,public,HK,Asia Pacific,CX,1.0,15.0
 Copa Holdings,2019'Q3,2700.0,public,PA,Latin America,CM,2.0,25.0
 Gol Linhas Aereas,2019'Q3,3512.0,public,BR,Latin America,G3,10.0,24.0
 LATAM Airlines,2019'Q3,10429.0,public,CL,Latin America,LA,1.0,20.0
+Air China,2019'Q3,20184.0,public,CN,China,CA,0.0,24.0
 China Eastern,2019'Q3,18181.0,public,CN,China,MU,4.0,24.0
 China Southern,2019'Q3,22516.0,public,CN,China,CZ,6.0,20.0
 Hainan Airlines,2019'Q3,10510.0,public,CN,China,HU,6.0,7.0
@@ -3058,6 +3184,7 @@ Alaska Air,2019'Q4,8781.0,public,US,North America,AS,6.0,17.0
 JetBlue,2019'Q4,8094.0,public,US,North America,B6,6.0,17.0
 Spirit Airlines,2019'Q4,3831.0,public,US,North America,NK,15.0,17.0
 Allegiant,2019'Q4,1841.0,public,US,North America,G4,10.0,28.0
+Hawaiian,2019'Q4,2832.0,public,US,North America,HA,0.0,17.0
 SkyWest,2019'Q4,2972.0,public,US,North America,OO,-8.0,30.0
 Air Canada,2019'Q4,14650.0,public,CA,North America,AC,11.0,19.0
 Exchange Income Corporation,2019'Q4,1027.0,public,CA,North America,,16.0,25.0
@@ -3078,6 +3205,7 @@ Asiana Airlines,2019'Q4,5948.0,public,KR,Asia Pacific,OZ,-7.0,-6.0
 Cathay Pacific,2019'Q4,13737.0,public,HK,Asia Pacific,CX,-3.0,16.0
 Copa Holdings,2019'Q4,2707.0,public,PA,Latin America,CM,1.0,27.0
 Gol Linhas Aereas,2019'Q4,3622.0,public,BR,Latin America,G3,14.0,26.0
+LATAM Airlines,2019'Q4,10431.0,public,CL,Latin America,LA,0.0,21.0
 Air China,2019'Q4,20060.0,public,CN,China,CA,-2.0,26.0
 China Eastern,2019'Q4,18329.0,public,CN,China,MU,3.0,25.0
 China Southern,2019'Q4,22800.0,public,CN,China,CZ,5.0,22.0
@@ -3100,12 +3228,14 @@ Delta Air Lines,2020'Q1,39529.0,public,US,North America,DL,-12.0,6.0
 Southwest Airlines,2020'Q1,19083.0,public,US,North America,WN,-13.0,4.0
 United Airlines,2020'Q1,36283.0,public,US,North America,UA,-13.0,1.0
 Alaska Air,2020'Q1,7477.0,public,US,North America,AS,-10.0,4.0
+JetBlue,2020'Q1,6810.0,public,US,North America,B6,-12.0,0.0
 Spirit Airlines,2020'Q1,3325.0,public,US,North America,NK,-2.0,4.0
 Allegiant,2020'Q1,1628.0,public,US,North America,G4,-4.0,22.0
 Hawaiian,2020'Q1,2335.0,public,US,North America,HA,-18.0,4.0
 SkyWest,2020'Q1,2761.0,public,US,North America,OO,-13.0,26.0
 Air Canada,2020'Q1,12144.0,public,CA,North America,AC,-9.0,6.0
 Exchange Income Corporation,2020'Q1,994.0,public,CA,North America,,9.0,25.0
+IAG,2020'Q1,23885.0,public,EU,Europe,IAG,-15.0,0.0
 Air France-KLM,2020'Q1,25950.0,public,EU,Europe,AF/KL,-17.0,-15.0
 Ryanair,2020'Q1,7460.0,public,EU,Europe,FR,-14.0,12.0
 easyJet,2020'Q1,6890.0,public,EU,Europe,U2,-11.0,9.0
@@ -3127,6 +3257,7 @@ Air China,2020'Q1,17869.0,public,CN,China,CA,-13.0,22.0
 China Eastern,2020'Q1,16208.0,public,CN,China,MU,-9.0,22.0
 China Southern,2020'Q1,20818.0,public,CN,China,CZ,-5.0,21.0
 Hainan Airlines,2020'Q1,9133.0,public,CN,China,HU,-10.0,-4.0
+Spring Airlines,2020'Q1,2139.0,public,CN,China,9C,0.0,18.0
 Juneyao Airlines,2020'Q1,2256.0,public,CN,China,HO,2.0,11.0
 Indigo,2020'Q1,4055.0,public,IN,India,6E,-3.0,11.0
 SpiceJet,2020'Q1,1503.0,public,IN,India,SG,10.0,15.0
@@ -3334,6 +3465,7 @@ JetBlue,2021'Q2,4497.0,public,US,North America,B6,20.0,-28.0
 Spirit Airlines,2021'Q2,2520.0,public,US,North America,NK,13.0,-21.0
 Allegiant,2021'Q2,1349.0,public,US,North America,G4,13.0,10.0
 Hawaiian,2021'Q2,1221.0,public,US,North America,HA,9.0,-26.0
+SkyWest,2021'Q2,2420.0,public,US,North America,OO,0.0,13.0
 Air Canada,2021'Q2,4801.0,public,CA,North America,AC,-30.0,-27.0
 Exchange Income Corporation,2021'Q2,996.0,public,CA,North America,,5.0,24.0
 IAG,2021'Q2,9577.0,public,EU,Europe,IAG,-30.0,-24.0
@@ -3383,6 +3515,7 @@ SkyWest,2021'Q3,2567.0,public,US,North America,OO,14.0,13.0
 Air Canada,2021'Q3,4888.0,public,CA,North America,AC,-11.0,-24.0
 Exchange Income Corporation,2021'Q3,1047.0,public,CA,North America,,14.0,24.0
 IAG,2021'Q3,9577.0,public,EU,Europe,IAG,-17.0,-16.0
+Air France-KLM,2021'Q3,15825.0,public,EU,Europe,AF/KL,11.0,0.0
 Ryanair,2021'Q3,4477.0,public,EU,Europe,FR,100.0,2.0
 easyJet,2021'Q3,2527.0,public,EU,Europe,U2,-30.0,-25.0
 Deutsche Lufthansa,2021'Q3,18725.0,public,EU,Europe,LH,5.0,1.0
@@ -3394,10 +3527,14 @@ Qantas Airways,2021'Q3,5794.0,public,AU,Asia Pacific,QF,-30.0,4.0
 Japan Airlines,2021'Q3,5440.0,public,JP,Asia Pacific,JL,5.0,-16.0
 ANA Holdings,2021'Q3,7898.0,public,JP,Asia Pacific,NH,4.0,-11.0
 Korean Air,2021'Q3,7448.0,public,KR,Asia Pacific,KE,-2.0,13.0
+Asiana Airlines,2021'Q3,3634.0,public,KR,Asia Pacific,OZ,-8.0,0.0
 Cathay Pacific,2021'Q3,5898.0,public,HK,Asia Pacific,CX,-17.0,-2.0
 Copa Holdings,2021'Q3,1333.0,public,PA,Latin America,CM,49.0,20.0
 Gol Linhas Aereas,2021'Q3,1383.0,public,BR,Latin America,G3,-18.0,-24.0
+LATAM Airlines,2021'Q3,4950.0,public,CL,Latin America,LA,0.0,-50.0
 Air China,2021'Q3,12073.0,public,CN,China,CA,-4.0,7.0
+China Eastern,2021'Q3,10993.0,public,CN,China,MU,0.0,25.0
+China Southern,2021'Q3,16203.0,public,CN,China,CZ,0.0,16.0
 Hainan Airlines,2021'Q3,5230.0,public,CN,China,HU,-1.0,-24.0
 Spring Airlines,2021'Q3,1839.0,public,CN,China,9C,6.0,11.0
 Juneyao Airlines,2021'Q3,1891.0,public,CN,China,HO,7.0,4.0
@@ -3408,10 +3545,12 @@ Kenya Airlines,2021'Q3,586.0,public,KE,Africa,KQ,6.0,17.0
 Emirates,2021'Q3,15924.0,private,AE,Middle East,EK,48.0,-25.0
 Qatar Airways,2021'Q3,11197.0,private,QA,Middle East,QR,18.0,-20.0
 Aeroflot,2021'Q3,6174.0,"taken private 2023, war",RU,Russia,SU,28.0,-18.0
+Turkish Airlines,2021'Q3,8987.0,public,TR,Turkey,TK,21.0,0.0
 Air Arabia,2021'Q3,774.0,public,AE,Middle East,G9,38.0,39.0
 Jazeera Airways,2021'Q3,236.0,public,KW,Middle East,J9,57.0,22.0
 American Airlines,2021'Q4,29882.0,public,US,North America,AA,72.0,-10.0
 Delta Air Lines,2021'Q4,29899.0,public,US,North America,DL,75.0,-2.0
+Southwest Airlines,2021'Q4,15790.0,public,US,North America,WN,75.0,0.0
 United Airlines,2021'Q4,24634.0,public,US,North America,UA,60.0,-8.0
 Alaska Air,2021'Q4,6176.0,public,US,North America,AS,73.0,2.0
 JetBlue,2021'Q4,6037.0,public,US,North America,B6,100.0,-6.0
@@ -3421,6 +3560,7 @@ Hawaiian,2021'Q4,1597.0,public,US,North America,HA,89.0,-16.0
 SkyWest,2021'Q4,2713.0,public,US,North America,OO,28.0,14.0
 Air Canada,2021'Q4,4975.0,public,CA,North America,AC,8.0,-22.0
 Exchange Income Corporation,2021'Q4,1098.0,public,CA,North America,,23.0,23.0
+IAG,2021'Q4,9576.0,public,EU,Europe,IAG,0.0,-7.0
 Air France-KLM,2021'Q4,16900.0,public,EU,Europe,AF/KL,34.0,4.0
 Ryanair,2021'Q4,5329.0,public,EU,Europe,FR,100.0,8.0
 easyJet,2021'Q4,2073.0,public,EU,Europe,U2,-30.0,-30.0
@@ -3451,6 +3591,7 @@ Kenya Airlines,2021'Q4,621.0,public,KE,Africa,KQ,28.0,19.0
 Emirates,2021'Q4,18002.0,private,AE,Middle East,EK,86.0,-12.0
 Qatar Airways,2021'Q4,12773.0,private,QA,Middle East,QR,48.0,-5.0
 Aeroflot,2021'Q4,6798.0,"taken private 2023, war",RU,Russia,SU,58.0,-8.0
+Turkish Airlines,2021'Q4,9738.0,public,TR,Turkey,TK,45.0,0.0
 Air Arabia,2021'Q4,864.0,public,AE,Middle East,G9,71.0,43.0
 Jazeera Airways,2021'Q4,269.0,public,KW,Middle East,J9,96.0,34.0
 American Airlines,2022'Q1,34654.0,public,US,North America,AA,70.0,-6.0
@@ -3472,12 +3613,14 @@ easyJet,2022'Q1,3154.0,public,EU,Europe,U2,17.0,-20.0
 Deutsche Lufthansa,2022'Q1,22574.0,public,EU,Europe,LH,35.0,9.0
 Norwegian Air Shuttle,2022'Q1,913.0,public,EU,Europe,DY,24.0,-49.0
 Finnair,2022'Q1,1435.0,public,EU,Europe,AY,37.0,-10.0
+Wizz Air,2022'Q1,2526.0,public,EU,Europe,W6,100.0,0.0
 Singapore Airlines,2022'Q1,7568.0,public,SG,Asia Pacific,SQ,100.0,20.0
 Qantas Airways,2022'Q1,4950.0,public,AU,Asia Pacific,QF,-30.0,2.0
 Japan Airlines,2022'Q1,6947.0,public,JP,Asia Pacific,JL,42.0,-2.0
 ANA Holdings,2022'Q1,9450.0,public,JP,Asia Pacific,NH,33.0,3.0
 Korean Air,2022'Q1,8480.0,public,KR,Asia Pacific,KE,18.0,18.0
 Asiana Airlines,2022'Q1,3967.0,public,KR,Asia Pacific,OZ,10.0,4.0
+Cathay Pacific,2022'Q1,6019.0,public,HK,Asia Pacific,CX,0.0,6.0
 Copa Holdings,2022'Q1,1874.0,public,PA,Latin America,CM,90.0,25.0
 Gol Linhas Aereas,2022'Q1,1767.0,public,BR,Latin America,G3,26.0,-21.0
 LATAM Airlines,2022'Q1,6888.0,public,CL,Latin America,LA,48.0,-35.0
@@ -3560,6 +3703,7 @@ Exchange Income Corporation,2022'Q3,1410.0,public,CA,North America,,34.0,22.0
 IAG,2022'Q3,20846.0,public,EU,Europe,IAG,100.0,9.0
 Air France-KLM,2022'Q3,25000.0,public,EU,Europe,AF/KL,56.0,11.0
 Ryanair,2022'Q3,10121.0,public,EU,Europe,FR,100.0,18.0
+easyJet,2022'Q3,5315.0,public,EU,Europe,U2,100.0,0.0
 Deutsche Lufthansa,2022'Q3,28121.0,public,EU,Europe,LH,49.0,15.0
 Norwegian Air Shuttle,2022'Q3,1588.0,public,EU,Europe,DY,100.0,-18.0
 Finnair,2022'Q3,2263.0,public,EU,Europe,AY,100.0,1.0
@@ -3644,6 +3788,7 @@ Southwest Airlines,2023'Q1,24383.0,public,US,North America,WN,41.0,9.0
 United Airlines,2023'Q1,47146.0,public,US,North America,UA,67.0,12.0
 Alaska Air,2023'Q1,9841.0,public,US,North America,AS,44.0,11.0
 JetBlue,2023'Q1,9272.0,public,US,North America,B6,40.0,5.0
+Spirit Airlines,2023'Q1,5142.0,public,US,North America,NK,44.0,0.0
 Allegiant,2023'Q1,2354.0,public,US,North America,G4,28.0,15.0
 Hawaiian,2023'Q1,2660.0,public,US,North America,HA,50.0,-3.0
 SkyWest,2023'Q1,2988.0,public,US,North America,OO,7.0,19.0
@@ -3761,6 +3906,7 @@ Cathay Pacific,2023'Q3,10442.0,public,HK,Asia Pacific,CX,63.0,20.0
 Copa Holdings,2023'Q3,3285.0,public,PA,Latin America,CM,35.0,30.0
 Gol Linhas Aereas,2023'Q3,3506.0,public,BR,Latin America,G3,47.0,17.0
 LATAM Airlines,2023'Q3,11451.0,public,CL,Latin America,LA,28.0,18.0
+Air China,2023'Q3,16704.0,public,CN,China,CA,99.0,0.0
 China Eastern,2023'Q3,13728.0,public,CN,China,MU,83.0,1.0
 China Southern,2023'Q3,20000.0,public,CN,China,CZ,46.0,9.0
 Hainan Airlines,2023'Q3,7653.0,public,CN,China,HU,100.0,2.0
@@ -3871,6 +4017,8 @@ Delta Air Lines,2024'Q2,59141.0,public,US,North America,DL,9.0,15.0
 Southwest Airlines,2024'Q2,27029.0,public,US,North America,WN,8.0,6.0
 United Airlines,2024'Q2,54580.0,public,US,North America,UA,11.0,13.0
 Alaska Air,2024'Q2,10289.0,public,US,North America,AS,3.0,13.0
+JetBlue,2024'Q2,9366.0,public,US,North America,B6,0.0,4.0
+Spirit Airlines,2024'Q2,5209.0,public,US,North America,NK,0.0,-7.0
 Allegiant,2024'Q2,2561.0,public,US,North America,G4,7.0,15.0
 SkyWest,2024'Q2,3156.0,public,US,North America,OO,6.0,21.0
 Air Canada,2024'Q2,15914.0,public,CA,North America,AC,14.0,13.0
@@ -3924,6 +4072,7 @@ easyJet,2024'Q3,12002.0,public,EU,Europe,U2,31.0,16.0
 Deutsche Lufthansa,2024'Q3,40362.0,public,EU,Europe,LH,18.0,7.0
 Norwegian Air Shuttle,2024'Q3,3166.0,public,EU,Europe,DY,39.0,19.0
 Finnair,2024'Q3,3285.0,public,EU,Europe,AY,2.0,16.0
+Wizz Air,2024'Q3,5568.0,public,EU,Europe,W6,0.0,4.0
 Singapore Airlines,2024'Q3,14581.0,public,SG,Asia Pacific,SQ,7.0,17.0
 Qantas Airways,2024'Q3,15116.0,public,AU,Asia Pacific,QF,42.0,17.0
 Japan Airlines,2024'Q3,11398.0,public,JP,Asia Pacific,JL,4.0,17.0
@@ -3939,6 +4088,7 @@ China Eastern,2024'Q3,17747.0,public,CN,China,MU,45.0,7.0
 China Southern,2024'Q3,24511.0,public,CN,China,CZ,28.0,8.0
 Indigo,2024'Q3,8492.0,public,IN,India,6E,10.0,14.0
 SpiceJet,2024'Q3,610.0,public,IN,India,SG,-30.0,19.0
+Jet Airways,2024'Q3,110.0,public,IN,India,9W,0.0,8.0
 Emirates,2024'Q3,41217.0,private,AE,Middle East,EK,-1.0,16.0
 Qatar Airways,2024'Q3,22758.0,private,QA,Middle East,QR,6.0,8.0
 Aeroflot,2024'Q3,9772.0,"taken private 2023, war",RU,Russia,SU,18.0,7.0
@@ -3963,12 +4113,14 @@ easyJet,2024'Q4,12131.0,public,EU,Europe,U2,25.0,23.0
 Deutsche Lufthansa,2024'Q4,40481.0,public,EU,Europe,LH,12.0,8.0
 Norwegian Air Shuttle,2024'Q4,3311.0,public,EU,Europe,DY,39.0,18.0
 Finnair,2024'Q4,3291.0,public,EU,Europe,AY,-3.0,13.0
+Wizz Air,2024'Q4,5612.0,public,EU,Europe,W6,0.0,13.0
 Singapore Airlines,2024'Q4,14525.0,public,SG,Asia Pacific,SQ,4.0,18.0
 Qantas Airways,2024'Q4,15078.0,public,AU,Asia Pacific,QF,8.0,17.0
 Japan Airlines,2024'Q4,11709.0,public,JP,Asia Pacific,JL,5.0,18.0
 ANA Holdings,2024'Q4,14486.0,public,JP,Asia Pacific,NH,3.0,14.0
 Korean Air,2024'Q4,12939.0,public,KR,Asia Pacific,KE,4.0,18.0
 Cathay Pacific,2024'Q4,13394.0,public,HK,Asia Pacific,CX,11.0,20.0
+Copa Holdings,2024'Q4,3446.0,public,PA,Latin America,CM,0.0,31.0
 Gol Linhas Aereas,2024'Q4,3447.0,public,BR,Latin America,G3,-9.0,15.0
 LATAM Airlines,2024'Q4,12833.0,public,CL,Latin America,LA,11.0,18.0
 Air China,2024'Q4,23189.0,public,CN,China,CA,20.0,7.0
@@ -4051,6 +4203,7 @@ Qantas Airways,2025'Q2,15449.0,public,AU,Asia Pacific,QF,7.0,17.0
 Japan Airlines,2025'Q2,12711.0,public,JP,Asia Pacific,JL,17.0,18.0
 ANA Holdings,2025'Q2,15426.0,public,JP,Asia Pacific,NH,10.0,15.0
 Cathay Pacific,2025'Q2,13997.0,public,HK,Asia Pacific,CX,9.0,19.0
+Copa Holdings,2025'Q2,3475.0,public,PA,Latin America,CM,0.0,32.0
 Gol Linhas Aereas,2025'Q2,3679.0,public,BR,Latin America,G3,4.0,16.0
 LATAM Airlines,2025'Q2,13174.0,public,CL,Latin America,LA,6.0,21.0
 Air China,2025'Q2,23410.0,public,CN,China,CA,5.0,7.0
