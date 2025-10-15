@@ -3501,7 +3501,7 @@ Indigo,2021'Q1,2349.0,public,IN,India,6E
 SpiceJet,2021'Q1,840.0,public,IN,India,SG
 Jet Airways,2021'Q1,79.0,public,IN,India,9W
 Kenya Airlines,2021'Q1,518.0,public,KE,Africa,KQ
-Emirates,2021'Q1,11767.0,private,AE,Middle East,EK
+Emirates,2021'Q1,11296.0,private,AE,Middle East,EK
 Qatar Airways,2021'Q1,8046.0,private,QA,Middle East,QR
 Aeroflot,2021'Q1,4927.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2021'Q1,7485.0,public,TR,Turkey,TK
@@ -3547,7 +3547,7 @@ Indigo,2021'Q2,2706.0,public,IN,India,6E
 SpiceJet,2021'Q2,893.0,public,IN,India,SG
 Jet Airways,2021'Q2,89.0,public,IN,India,9W
 Kenya Airlines,2021'Q2,552.0,public,KE,Africa,KQ
-Emirates,2021'Q2,13846.0,private,AE,Middle East,EK
+Emirates,2021'Q2,12902.0,private,AE,Middle East,EK
 Qatar Airways,2021'Q2,9622.0,private,QA,Middle East,QR
 Aeroflot,2021'Q2,5551.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2021'Q2,8236.0,public,TR,Turkey,TK
@@ -3593,7 +3593,7 @@ Indigo,2021'Q3,3063.0,public,IN,India,6E
 SpiceJet,2021'Q3,946.0,public,IN,India,SG
 Jet Airways,2021'Q3,98.0,public,IN,India,9W
 Kenya Airlines,2021'Q3,586.0,public,KE,Africa,KQ
-Emirates,2021'Q3,15924.0,private,AE,Middle East,EK
+Emirates,2021'Q3,14508.0,private,AE,Middle East,EK
 Qatar Airways,2021'Q3,11197.0,private,QA,Middle East,QR
 Aeroflot,2021'Q3,6174.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2021'Q3,8987.0,public,TR,Turkey,TK
@@ -3639,7 +3639,7 @@ Indigo,2021'Q4,3421.0,public,IN,India,6E
 SpiceJet,2021'Q4,999.0,public,IN,India,SG
 Jet Airways,2021'Q4,107.0,public,IN,India,9W
 Kenya Airlines,2021'Q4,621.0,public,KE,Africa,KQ
-Emirates,2021'Q4,18002.0,private,AE,Middle East,EK
+Emirates,2021'Q4,16114.0,private,AE,Middle East,EK
 Qatar Airways,2021'Q4,12773.0,private,QA,Middle East,QR
 Aeroflot,2021'Q4,6798.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2021'Q4,9738.0,public,TR,Turkey,TK
@@ -3686,7 +3686,7 @@ Indigo,2022'Q1,4221.0,public,IN,India,6E
 SpiceJet,2022'Q1,1027.0,public,IN,India,SG
 Jet Airways,2022'Q1,108.0,public,IN,India,9W
 Kenya Airlines,2022'Q1,702.0,public,KE,Africa,KQ
-Emirates,2022'Q1,21639.0,private,AE,Middle East,EK
+Emirates,2022'Q1,19394.0,private,AE,Middle East,EK
 Qatar Airways,2022'Q1,14348.0,private,QA,Middle East,QR
 Aeroflot,2022'Q1,6991.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2022'Q1,11910.0,public,TR,Turkey,TK
@@ -3733,7 +3733,7 @@ Indigo,2022'Q2,5021.0,public,IN,India,6E
 SpiceJet,2022'Q2,1055.0,public,IN,India,SG
 Jet Airways,2022'Q2,109.0,public,IN,India,9W
 Kenya Airlines,2022'Q2,784.0,public,KE,Africa,KQ
-Emirates,2022'Q2,25277.0,private,AE,Middle East,EK
+Emirates,2022'Q2,22673.0,private,AE,Middle East,EK
 Qatar Airways,2022'Q2,15971.0,private,QA,Middle East,QR
 Aeroflot,2022'Q2,7185.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2022'Q2,14082.0,public,TR,Turkey,TK
@@ -3780,7 +3780,7 @@ Indigo,2022'Q3,5822.0,public,IN,India,6E
 SpiceJet,2022'Q3,1082.0,public,IN,India,SG
 Jet Airways,2022'Q3,111.0,public,IN,India,9W
 Kenya Airlines,2022'Q3,865.0,public,KE,Africa,KQ
-Emirates,2022'Q3,28915.0,private,AE,Middle East,EK
+Emirates,2022'Q3,25953.0,private,AE,Middle East,EK
 Qatar Airways,2022'Q3,17594.0,private,QA,Middle East,QR
 Aeroflot,2022'Q3,7378.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2022'Q3,16254.0,public,TR,Turkey,TK
@@ -3827,7 +3827,7 @@ Indigo,2022'Q4,6622.0,public,IN,India,6E
 SpiceJet,2022'Q4,1110.0,public,IN,India,SG
 Jet Airways,2022'Q4,112.0,public,IN,India,9W
 Kenya Airlines,2022'Q4,947.0,public,KE,Africa,KQ
-Emirates,2022'Q4,32552.0,private,AE,Middle East,EK
+Emirates,2022'Q4,29232.0,private,AE,Middle East,EK
 Qatar Airways,2022'Q4,19217.0,private,QA,Middle East,QR
 Aeroflot,2022'Q4,7571.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2022'Q4,18426.0,public,TR,Turkey,TK
@@ -3874,7 +3874,7 @@ Indigo,2023'Q1,7033.0,public,IN,India,6E
 SpiceJet,2023'Q1,1056.0,public,IN,India,SG
 Jet Airways,2023'Q1,111.0,public,IN,India,9W
 Kenya Airlines,2023'Q1,996.0,public,KE,Africa,KQ
-Emirates,2023'Q1,33753.0,private,AE,Middle East,EK
+Emirates,2023'Q1,30175.0,private,AE,Middle East,EK
 Qatar Airways,2023'Q1,20839.0,private,QA,Middle East,QR
 Aeroflot,2023'Q1,7811.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2023'Q1,18173.0,public,TR,Turkey,TK
@@ -3921,7 +3921,7 @@ Indigo,2023'Q2,7443.0,public,IN,India,6E
 SpiceJet,2023'Q2,1001.0,public,IN,India,SG
 Jet Airways,2023'Q2,110.0,public,IN,India,9W
 Kenya Airlines,2023'Q2,1044.0,public,KE,Africa,KQ
-Emirates,2023'Q2,33775.0,private,AE,Middle East,EK
+Emirates,2023'Q2,31027.0,private,AE,Middle East,EK
 Qatar Airways,2023'Q2,21153.0,private,QA,Middle East,QR
 Aeroflot,2023'Q2,8051.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2023'Q2,18715.0,public,TR,Turkey,TK
@@ -3968,7 +3968,7 @@ Indigo,2023'Q3,7854.0,public,IN,India,6E
 SpiceJet,2023'Q3,947.0,public,IN,India,SG
 Jet Airways,2023'Q3,109.0,public,IN,India,9W
 Kenya Airlines,2023'Q3,1093.0,public,KE,Africa,KQ
-Emirates,2023'Q3,33797.0,private,AE,Middle East,EK
+Emirates,2023'Q3,31879.0,private,AE,Middle East,EK
 Qatar Airways,2023'Q3,21467.0,private,QA,Middle East,QR
 Aeroflot,2023'Q3,8292.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2023'Q3,20430.0,public,TR,Turkey,TK
@@ -4015,7 +4015,7 @@ Indigo,2023'Q4,8465.0,public,IN,India,6E
 SpiceJet,2023'Q4,826.0,public,IN,India,SG
 Jet Airways,2023'Q4,108.0,public,IN,India,9W
 Kenya Airlines,2023'Q4,1142.0,public,KE,Africa,KQ
-Emirates,2023'Q4,33819.0,private,AE,Middle East,EK
+Emirates,2023'Q4,32731.0,private,AE,Middle East,EK
 Qatar Airways,2023'Q4,21781.0,private,QA,Middle East,QR
 Aeroflot,2023'Q4,8532.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2023'Q4,21022.0,public,TR,Turkey,TK
@@ -4057,7 +4057,7 @@ China Southern,2024'Q1,23609.0,public,CN,China,CZ
 Indigo,2024'Q1,8298.0,public,IN,India,6E
 SpiceJet,2024'Q1,760.0,public,IN,India,SG
 Jet Airways,2024'Q1,107.0,public,IN,India,9W
-Emirates,2024'Q1,38478.0,private,AE,Middle East,EK
+Emirates,2024'Q1,32640.0,private,AE,Middle East,EK
 Qatar Airways,2024'Q1,22095.0,private,QA,Middle East,QR
 Aeroflot,2024'Q1,8482.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2024'Q1,21438.0,public,TR,Turkey,TK
@@ -4099,7 +4099,7 @@ China Southern,2024'Q2,23932.0,public,CN,China,CZ
 Indigo,2024'Q2,8562.0,public,IN,India,6E
 SpiceJet,2024'Q2,733.0,public,IN,India,SG
 Jet Airways,2024'Q2,109.0,public,IN,India,9W
-Emirates,2024'Q2,39874.0,private,AE,Middle East,EK
+Emirates,2024'Q2,33046.0,private,AE,Middle East,EK
 Qatar Airways,2024'Q2,22427.0,private,QA,Middle East,QR
 Aeroflot,2024'Q2,8793.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2024'Q2,21950.0,public,TR,Turkey,TK
@@ -4141,7 +4141,7 @@ China Southern,2024'Q3,24511.0,public,CN,China,CZ
 Indigo,2024'Q3,8492.0,public,IN,India,6E
 SpiceJet,2024'Q3,610.0,public,IN,India,SG
 Jet Airways,2024'Q3,110.0,public,IN,India,9W
-Emirates,2024'Q3,41217.0,private,AE,Middle East,EK
+Emirates,2024'Q3,33451.0,private,AE,Middle East,EK
 Qatar Airways,2024'Q3,22758.0,private,QA,Middle East,QR
 Aeroflot,2024'Q3,9772.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2024'Q3,22259.0,public,TR,Turkey,TK
@@ -4182,7 +4182,7 @@ China Southern,2024'Q4,24234.0,public,CN,China,CZ
 Indigo,2024'Q4,8797.0,public,IN,India,6E
 SpiceJet,2024'Q4,590.0,public,IN,India,SG
 Jet Airways,2024'Q4,109.0,public,IN,India,9W
-Emirates,2024'Q4,42586.0,private,AE,Middle East,EK
+Emirates,2024'Q4,33857.0,private,AE,Middle East,EK
 Qatar Airways,2024'Q4,23089.0,private,QA,Middle East,QR
 Aeroflot,2024'Q4,10181.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2024'Q4,22669.0,public,TR,Turkey,TK
@@ -4268,7 +4268,7 @@ China Southern,2025'Q2,24492.0,public,CN,China,CZ
 Indigo,2025'Q2,9090.0,public,IN,India,6E
 SpiceJet,2025'Q2,519.0,public,IN,India,SG
 Jet Airways,2025'Q2,106.0,public,IN,India,9W
-Emirates,2025'Q2,43955.0,private,AE,Middle East,EK
+Emirates,2025'Q2,34262.0,private,AE,Middle East,EK
 Qatar Airways,2025'Q2,17566.0,private,QA,Middle East,QR
 Aeroflot,2025'Q2,5655.0,"taken private 2023, war",RU,Russia,SU
 Turkish Airlines,2025'Q2,23106.0,public,TR,Turkey,TK
